@@ -1,3 +1,4 @@
+
 """
 Django settings for LostAndFoundWeb project.
 
@@ -49,7 +50,6 @@ INSTALLED_APPS = [
     'accounts.apps.AccountConfig',
     'rest_framework',
     'django_filters',
-
 ]
 
 MIDDLEWARE = [
@@ -132,8 +132,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static/'),
+]
+
 REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS':(
         'django_filters.rest_framework.DjangoFilterBackend',
@@ -144,4 +150,4 @@ REST_FRAMEWORK = {
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-AUTH_USER_MODEL = 'accounts.User'
+

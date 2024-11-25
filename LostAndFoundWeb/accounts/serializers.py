@@ -1,9 +1,11 @@
+from tkinter import Image
+
 from rest_framework import serializers
 
-from accounts.models import User
+from accounts.models import Account
 
 
-class UserSerializer(serializers.ModelSerializer):
+class AccountSerializer(serializers.ModelSerializer):
     class Meta:
-        model = User
-        fields = '__all__'
+        model = Account
+        fields = ['username', 'email', 'password', 'profile_picture']

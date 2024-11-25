@@ -6,7 +6,6 @@ from accounts import viewsets
 router = routers.DefaultRouter()
 
 
-router.register('User', viewsets.UserViewSet)
-
+router.register('Account', viewsets.UserViewSet)
 
 urlpatterns = router.urls

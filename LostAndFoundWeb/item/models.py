@@ -82,9 +82,10 @@ class FoundItem(ModelBase):
 
 class ItemImage(ModelBase):
     image = models.ImageField(
-        upload_to='items/',
+        upload_to='media/items_pictures',
         null=True,
         db_column='image',
+        blank=True,
     )
 
     class Meta:
