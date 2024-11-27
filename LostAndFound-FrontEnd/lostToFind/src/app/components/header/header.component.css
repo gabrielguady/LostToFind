@@ -1,0 +1,8 @@
+.header {
+  background: #171480;
+  width: 100%;
+  position: fixed; /* or sticky, or relative */
+  top: 0; /* Positions at top of page */
+  left: 0;
+  z-index: 1000; /* Ensures it's above other content */
+}
