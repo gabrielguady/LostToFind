@@ -7,7 +7,7 @@ import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/
   standalone: true,
   imports: [
     NgOptimizedImage,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   templateUrl: './default-login-layout.component.html',
   styleUrl: './default-login-layout.component.css'
