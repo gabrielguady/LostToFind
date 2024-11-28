@@ -3,5 +3,27 @@
   primaryBtnText="Login Now"
   secondaryBtnText="Signup Now"
 >
+  <form [formGroup]="loginForm" class="login-form">
+    <div class="form-group">
+      <label for="email" class="form-label">E-mail</label>
+      <input
+        type="email"
+        id="email"
+        formControlName="email"
+        class="form-input"
+        aria-label="Email input field"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password" class="form-label">Password</label>
+      <input
+        type="password"
+        id="password"
+        formControlName="password"
+        class="form-input"
+        aria-label="Password input field"
+      />
+      </div>
+  </form>
 
 </app-default-login-layout>
