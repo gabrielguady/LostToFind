@@ -10,19 +10,23 @@
       <div class="brand-name">ToFind</div>
     </div>
     <div class="login-content">
-      <h1 class="login-title">Login into your account</h1>
+      <h1 class="login-title">
+        {{ title }}
+      </h1>
       <ng-content>
       </ng-content>
         <button
           type="submit"
           class="login-button"
-        >Login Now</button>
+          (click)="submit()"
+        >{{ primaryBtnText }}</button>
         <div class="divider">
             Don't have an account?
         </div>
         <button
           class="signup-button"
-        >Signup Now</button>
+          (click)="navigate()"
+        >{{secondaryBtnText}}</button>
     </div>
   </div>
   <section class="image-section">
