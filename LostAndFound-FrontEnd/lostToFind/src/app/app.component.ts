@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {NavigationExtras, Router, RouterOutlet} from '@angular/router';
 import {LoginComponent} from './pages/login/login.component';
 
 @Component({
@@ -11,4 +11,15 @@ import {LoginComponent} from './pages/login/login.component';
 })
 export class AppComponent {
   title = 'lostToFind';
+  private router: Router = new Router();
+
+
+
+  public goToPage(route: string): void {
+    const extras: NavigationExtras = {queryParamsHandling: 'merge'};
+    this.router.navigate([route], extras).then();
+  }
+
 }
+
+

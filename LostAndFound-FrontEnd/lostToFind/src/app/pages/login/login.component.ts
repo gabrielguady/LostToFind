@@ -34,7 +34,6 @@ export class LoginComponent implements OnInit {
   }
 
   submit(){
-    console.log(this.loginForm.value)
   }
   navigate(){
     this.router.navigate(['/signup']);
