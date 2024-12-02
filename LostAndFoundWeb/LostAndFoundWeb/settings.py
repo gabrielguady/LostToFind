@@ -1,4 +1,3 @@
-
 """
 Django settings for LostAndFoundWeb project.
 
@@ -24,7 +23,6 @@ lostAndFound_conf = os.path.join(BASE_DIR, 'lostAndFound.config')
 if exists(lostAndFound_conf):
     load_dotenv(lostAndFound_conf)
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -35,7 +33,6 @@ SECRET_KEY = 'django-insecure-%v=hpvco_c$eyx3r1fs%)9o^h!^sws*z61ak8is*a_0fs(q=&x
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -49,6 +46,7 @@ INSTALLED_APPS = [
     'item.apps.ItemConfig',
     'accounts.apps.AccountConfig',
     'rest_framework',
+    'rest_framework_simplejwt',
     'django_filters',
 ]
 
@@ -83,7 +81,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'LostAndFoundWeb.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
@@ -97,7 +94,6 @@ DATABASES = {
         'PASSWORD': os.environ.get('DB_PASS')
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -117,7 +113,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
@@ -128,7 +123,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
@@ -141,8 +135,11 @@ STATICFILES_DIRS = [
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS':(
+    'DEFAULT_FILTER_BACKENDS': (
         'django_filters.rest_framework.DjangoFilterBackend',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
 }
@@ -150,4 +147,3 @@ REST_FRAMEWORK = {
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-

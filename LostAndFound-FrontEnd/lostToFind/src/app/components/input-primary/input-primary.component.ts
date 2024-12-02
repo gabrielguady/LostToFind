@@ -52,10 +52,6 @@ export class InputPrimaryComponent  implements ControlValueAccessor {
   setDisabledState(isDisabled: boolean) {
   }
 
-  shouldFocus(): boolean {
-    return this.type === 'email';
-  }
-
 
 
 }

@@ -19,6 +19,7 @@
           type="submit"
           class="login-button"
           (click)="submit()"
+          [disabled]="isDisabled"
         >{{ primaryBtnText }}</button>
         <div class="divider">
             Or

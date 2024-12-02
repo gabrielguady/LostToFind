@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
   submit(){
   }
   navigate(){
-    this.router.navigate(['/signup']);
+    this.router.navigate(['signup']);
   }
 
 }

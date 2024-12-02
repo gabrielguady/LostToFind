@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {Component, EventEmitter, input, Input, Output} from '@angular/core';
 import {NgOptimizedImage} from '@angular/common';
 import {ReactiveFormsModule} from '@angular/forms';
 
@@ -15,6 +15,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 export class DefaultLoginLayoutComponent {
   @Input() title: string='';
   @Input() primaryBtnText: string='';
+  @Input() isDisabled: boolean = false;
   @Input() secondaryBtnText: string='';
   @Output("submit") onSubmit = new EventEmitter();
   @Output("navigate") onNavigate = new EventEmitter();
