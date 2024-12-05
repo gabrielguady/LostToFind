@@ -3,7 +3,10 @@ import {DefaultLoginLayoutComponent} from '../../components/default-login-layout
 import {FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
 import {InputPrimaryComponent} from '../../components/input-primary/input-primary.component';
 import {AutofocusDirective} from '../../../shared/directives/auto-focus-directive';
-import {Router} from '@angular/router';
+import {Account} from '../../../shared/models/accounts';
+import {HttpClient} from '@angular/common/http';
+import { URLS } from '../../../shared/urls';
+import {ServiceComponent} from '../service.component';
 
 @Component({
   selector: 'app-signup',
@@ -18,10 +21,12 @@ import {Router} from '@angular/router';
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css'
 })
-export class SignupComponent implements OnInit {
+export class SignupComponent extends  ServiceComponent<Account> implements OnInit {
+  public object: Account = new Account();
 
   public signupForm! : FormGroup;
-  constructor(private router : Router) {
+  constructor(private http: HttpClient) {
+    super (http, URLS.ACCOUNT)
 
   }
 
@@ -34,11 +39,19 @@ export class SignupComponent implements OnInit {
     })
   }
 
-  submit(){
-    console.log(this.signupForm.value)
-  }
-  navigate(){
-    this.router.navigate(['login']);
+  public save(): void {
+    if (this.signupForm.valid) {
+      Object.keys(this.signupForm.controls).forEach(key => {
+        const value = this.signupForm.getRawValue()[key];
+        if (value !== null && value !== undefined) {
+          this.object[key] = value;
+        }
+      });
+      this.service.save(this.object).subscribe((response: Account ) => {
+        this.goToPage('login')
+      })
+    }
+
   }
 
 }
