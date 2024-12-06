@@ -5,20 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66e8881-7e37-4d99-8b79-1b937eeeac9d" name="Changes" comment="cors headers adicionado">
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.config.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.config.server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/models/found-item.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/components/input-primary/input-primary.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/components/input-primary/input-primary.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/components/service.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/service.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/service.component.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/models/accounts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/models/accounts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/directives/auto-focus-directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/directives/auto-focus-directive.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/models/items.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/models/model-base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/models/model-base.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/viewsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/viewsets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +93,13 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Repositórios\ProjetoLostAndFound\LostToFind\LostAndFoundWeb\media" />
+      <recent name="C:\Repositórios\ProjetoLostAndFound\LostToFind\LostAndFoundWeb\media\items_pictures" />
+      <recent name="C:\Repositórios\ProjetoLostAndFound\LostToFind\LostAndFoundWeb\item" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="LostAndFoundWeb" type="Python.DjangoServer" factoryName="Django server">
       <module name="LostAndFoundWeb" />
@@ -181,6 +196,9 @@
       <workItem from="1733340531989" duration="127000" />
       <workItem from="1733364183762" duration="86000" />
       <workItem from="1733410580139" duration="6266000" />
+      <workItem from="1733458277552" duration="1814000" />
+      <workItem from="1733494960955" duration="11176000" />
+      <workItem from="1733509147501" duration="2717000" />
     </task>
     <task id="LOCAL-00001" summary="correção dos models">
       <option name="closed" value="true" />

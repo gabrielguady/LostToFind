@@ -1,10 +1,9 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-
 import { routes } from './app.routes';
 import {provideClientHydration } from '@angular/platform-browser';
-import { provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
-// import {JwtInterceptor} from '../shared/services/auth.interceptors';
+import {provideHttpClient, withFetch, withInterceptorsFromDi} from '@angular/common/http';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
   providers:
@@ -12,6 +11,7 @@ export const appConfig: ApplicationConfig = {
       provideRouter(routes),
       provideClientHydration(),
       provideHttpClient(withInterceptorsFromDi()),
+      provideHttpClient(withFetch()), provideAnimationsAsync()
       // { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }
     ],
 

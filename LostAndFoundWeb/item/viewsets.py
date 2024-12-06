@@ -11,7 +11,3 @@ class LostItemViewSet(viewsets.ModelViewSet):
 class FoundItemViewSet(viewsets.ModelViewSet):
     queryset = FoundItem.objects.all()
     serializer_class =serializers.FoundItemSerializer
-
-class ItemImageViewSet(viewsets.ModelViewSet):
-    queryset = ItemImage.objects.all()
-    serializer_class = serializers.ItemImageSerializer

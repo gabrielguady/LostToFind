@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4c6cd49d-4dc5-4b60-a236-427a8d4a36fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/shared/models/found-item.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/service.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/shared/directives/auto-focus-directive.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/shared/directives/auto-focus-directive.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/shared/models/items.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/shared/models/model-base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/shared/models/model-base.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/shared/urls.ts" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/shared/urls.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFound-FrontEnd/lostToFind/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/LostAndFoundWeb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/LostAndFoundWeb/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/LostAndFoundWeb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/LostAndFoundWeb/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/accounts/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/accounts/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/accounts/viewsets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/item/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/item/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/item/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/item/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/item/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/item/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/item/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/item/viewsets.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2prQmtRTs6JegAAxPoZRz4tjUK1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenDatabaseViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "feat-gabriel-guady",
+    "last_opened_file_path": "C:/Users/blonded"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+</project>

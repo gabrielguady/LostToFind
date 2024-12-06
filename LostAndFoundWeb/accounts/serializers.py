@@ -6,7 +6,7 @@ from rest_framework import serializers
 from accounts.models import Account
 
 
-class AccountSerializer(serializers.ModelSerializer):
+class SignupSerializer(serializers.ModelSerializer):
     username = serializers.CharField(required=True)
     email = serializers.EmailField(required=True)
     password = serializers.CharField(write_only=True, required=True)
@@ -14,28 +14,23 @@ class AccountSerializer(serializers.ModelSerializer):
         model = Account
         fields = ['username', 'email', 'password']
 
+    def validate_username(self, value):
+        if Account.objects.filter(username=value).exists():
+            raise serializers.ValidationError("Username já existe")
+        return value
 
-        class Meta:
-            model = Account
-            fields = ['username', 'email', 'password']
+    def validate_email(self, value):
+        if Account.objects.filter(email=value).exists():
+            raise serializers.ValidationError("Email já cadastrado")
+        return value
 
-        def validate_username(self, value):
-            if Account.objects.filter(username=value).exists():
-                raise serializers.ValidationError("Username já existe")
-            return value
-
-        def validate_email(self, value):
-            if Account.objects.filter(email=value).exists():
-                raise serializers.ValidationError("Email já cadastrado")
-            return value
-
-        def create(self, validated_data):
-            account = Account.objects.create_user(
-                username=validated_data['username'],
-                email=validated_data['email'],
-                password=validated_data['password']
-            )
-            return account
+    def create(self, validated_data):
+        account = Account.objects.create_user(
+            username=validated_data['username'],
+            email=validated_data['email'],
+            password=validated_data['password']
+        )
+        return account
 
 
 class LoginSerializer(serializers.Serializer):

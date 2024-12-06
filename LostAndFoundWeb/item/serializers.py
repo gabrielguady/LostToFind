@@ -10,8 +10,3 @@ class FoundItemSerializer(serializers.ModelSerializer):
         class Meta:
             model = models.FoundItem
             fields = '__all__'
-
-class ItemImageSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = models.ItemImage
-        fields = '__all__'

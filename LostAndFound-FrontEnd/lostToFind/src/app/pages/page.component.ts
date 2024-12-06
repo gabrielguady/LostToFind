@@ -1,10 +1,11 @@
 import {NavigationExtras, Router} from '@angular/router';
-import {AppService} from '../../shared/services/app.service'
 import {HttpClient} from '@angular/common/http';
+import {AppService} from '../../shared/services/app.service';
 
-export class ServiceComponent<T> {
+export class PageComponent<T> {
   private router: Router = new Router();
-  public  service: AppService<T>;
+  public service: AppService<T>;
+
   constructor(http: HttpClient, url: string) {
     this.service = new AppService<T>(http, url);
   }

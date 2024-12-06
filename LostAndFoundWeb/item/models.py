@@ -1,3 +1,4 @@
+
 from django.db import models
 
 
@@ -23,6 +24,17 @@ class ModelBase(models.Model):
         abstract = True
         managed = True
 
+class ItemImage(ModelBase):
+    image = models.ImageField(
+        upload_to='media/items_pictures',
+        null=True,
+        db_column='image',
+        blank=True,
+        )
+
+    class Meta:
+        db_table = 'item_image'
+        managed = True
 
 class LostItem(ModelBase):
     title = models.CharField(
@@ -77,17 +89,4 @@ class FoundItem(ModelBase):
 
     class Meta:
         db_table = 'item_found'
-        managed = True
-
-
-class ItemImage(ModelBase):
-    image = models.ImageField(
-        upload_to='media/items_pictures',
-        null=True,
-        db_column='image',
-        blank=True,
-    )
-
-    class Meta:
-        db_table = 'item_image'
         managed = True

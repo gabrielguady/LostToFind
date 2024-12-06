@@ -2,7 +2,7 @@
   title="Signup into a new account!"
   primaryBtnText="Signup Now"
   secondaryBtnText="Login Now"
-  (submit)="save()"
+  (navigate)="goToPage('login')"
   [isDisabled]="!signupForm.valid"
 >
   <form [formGroup]="signupForm" class="signup-form">
