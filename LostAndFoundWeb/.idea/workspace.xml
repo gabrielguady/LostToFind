@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a66e8881-7e37-4d99-8b79-1b937eeeac9d" name="Changes" comment="cors headers adicionado">
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.config.server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.config.server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/components/input-primary/input-primary.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/components/input-primary/input-primary.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/components/service.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/service.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/models/accounts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/models/accounts.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/viewsets.py" afterDir="false" />
-    </list>
+    <list default="true" id="a66e8881-7e37-4d99-8b79-1b937eeeac9d" name="Changes" comment="cors headers adicionado" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,33 +44,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Django Server.LostAndFoundWeb.executor&quot;: &quot;Run&quot;,
-    &quot;Python.0001_initial.executor&quot;: &quot;Run&quot;,
-    &quot;Python.models.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
-    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feat-gabriel-guady&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Repositórios/ProjetoLostAndFound/LostToFind/LostAndFoundWeb&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.LostAndFoundWeb.executor": "Run",
+    "Python.0001_initial.executor": "Run",
+    "Python.models.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
+    "git-widget-placeholder": "feat-gabriel-guady",
+    "last_opened_file_path": "C:/Users/fpf/Documents/joaoedu/projeto/LostToFind/LostAndFound-FrontEnd/lostToFind",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <module name="LostAndFoundWeb" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.12 (.venv)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="LostAndFoundWeb" type="Python.DjangoServer" factoryName="Django server">
       <module name="LostAndFoundWeb" />
       <option name="ENV_FILES" value="" />
@@ -112,37 +122,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <module name="LostAndFoundWeb" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.12 (.venv)" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="localhost" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23339.19" />
-        <option value="bundled-python-sdk-0029f7779945-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23339.19" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23339.15" />
       </set>
     </attachedChunks>
   </component>
@@ -181,6 +165,7 @@
       <workItem from="1733340531989" duration="127000" />
       <workItem from="1733364183762" duration="86000" />
       <workItem from="1733410580139" duration="6266000" />
+      <workItem from="1733435387416" duration="13000" />
     </task>
     <task id="LOCAL-00001" summary="correção dos models">
       <option name="closed" value="true" />
