@@ -1,0 +1,46 @@
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem; /* Ajusta o espaço entre os itens */
+  justify-content: center;
+  align-items: start;
+  padding: 1.25rem; /* Espaçamento interno */
+  max-width: 100%; /* Largura máxima */
+  font-size: 2rem; /* Tamanho do texto */
+  color: white; /* Cor do texto */
+  background-color: #3b82f6; /* Cor de fundo azul */
+  border-radius: 1.5rem; /* Bordas arredondadas */
+  width: 1242px; /* Largura específica do banner */
+}
+
+.banner img {
+  object-fit: contain; /* Ajusta a imagem mantendo a proporção */
+  flex-shrink: 0; /* Impede que a imagem encolha */
+  aspect-ratio: 0.89; /* Proporção da imagem */
+  width: 126px; /* Largura da imagem */
+}
+
+.banner h2 {
+  text-align: center; /* Centraliza o texto do título */
+  font-weight: bold; /* Negrito */
+}
+
+.banner h2 span {
+  font-style: italic; /* Itálico */
+  font-weight: 900; /* Negrito extra */
+}
+
+.banner .leading-10 {
+  line-height: 2.5rem; /* Espaçamento entre linhas */
+}
+
+.banner button {
+  color: white; /* Cor do texto do botão */
+  text-decoration: underline; /* Sublinhado */
+  outline: none; /* Remove contorno padrão */
+}
+
+.banner button:focus {
+  ring: 2px solid white; /* Estilo do foco */
+  ring-offset: 2px; /* Offset do foco */
+}

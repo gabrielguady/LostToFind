@@ -1,0 +1,42 @@
+<section class="mt-8">
+  <h2 class="text-3xl font-bold text-black">Recents</h2>
+  <div
+    class="flex overflow-hidden overflow-x-auto flex-col mt-1 w-full text-center bg-white bg-opacity-0 max-md:max-w-full"
+  >
+    <div
+      class="flex flex-wrap gap-10 items-center p-2.5 max-md:max-w-full"
+      role="list"
+    >
+      <ng-container *ngFor="let item of items">
+        <article
+          class="flex overflow-hidden flex-col self-stretch my-auto rounded-xl min-w-[240px] w-[389px]"
+          role="listitem"
+        >
+          <img
+            loading="lazy"
+            [src]="item.image"
+            class="object-contain self-center max-w-full rounded-xl aspect-[1.21] w-[389px]"
+            [alt]="item.alt"
+          />
+          <div class="flex overflow-hidden flex-col p-2.5 w-full bg-white">
+            <div class="flex flex-col items-start self-start px-2.5 text-xl">
+              <h3 class="text-2xl font-bold text-black">{{ item.title }}</h3>
+              <div class="mt-5 text-blue-800">{{ item.category }}</div>
+              <time class="mt-5 text-stone-500">{{ item.date }}</time>
+            </div>
+            <div
+              [class]="
+                    'py-2.5 mt-5 w-full text-2xl font-medium text-black whitespace-nowrap rounded-xl ' +
+                    (item.status === 'Lost'
+                      ? 'bg-red-200'
+                      : 'bg-green-200')
+                  "
+            >
+              {{ item.status }}
+            </div>
+          </div>
+        </article>
+      </ng-container>
+    </div>
+  </div>
+</section><p>recent-items works!</p>
