@@ -24,6 +24,13 @@ class ModelBase(models.Model):
         abstract = True
         managed = True
 
+
+class Category(ModelBase):
+    name=models.CharField(
+        null=False,
+        db_column='category_name'
+    )
+
 class ItemImage(ModelBase):
     image = models.ImageField(
         upload_to='media/items_pictures',
@@ -35,6 +42,7 @@ class ItemImage(ModelBase):
     class Meta:
         db_table = 'item_image'
         managed = True
+
 
 class LostItem(ModelBase):
     title = models.CharField(
@@ -59,6 +67,13 @@ class LostItem(ModelBase):
         db_column='cs_resolved',
         default=False,
         null=False,
+    )
+    Category = models.ForeignKey(
+        Category,
+        on_delete=models.PROTECT,
+        db_column='category_id',
+        null=False,
+        default=1,
     )
 
     class Meta:
@@ -85,6 +100,13 @@ class FoundItem(ModelBase):
         db_column='cs_resolved',
         default=False,
         null=False,
+    )
+    Category = models.ForeignKey(
+        Category,
+        on_delete=models.PROTECT,
+        db_column='category_id',
+        null=False,
+        default=1,
     )
 
     class Meta:

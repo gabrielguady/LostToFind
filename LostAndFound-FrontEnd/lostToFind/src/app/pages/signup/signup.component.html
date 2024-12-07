@@ -2,6 +2,7 @@
   title="Signup into a new account!"
   primaryBtnText="Signup Now"
   secondaryBtnText="Login Now"
+  (submit)="submit()"
   (navigate)="goToPage('login')"
   [isDisabled]="!signupForm.valid"
 >

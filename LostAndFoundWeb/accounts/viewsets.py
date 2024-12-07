@@ -1,39 +1,49 @@
-from django.contrib.auth import login, logout
-from rest_framework import viewsets, status
-from rest_framework.decorators import action
-from rest_framework.permissions import AllowAny
+from rest_framework.views import APIView
 from rest_framework.response import Response
+from rest_framework import status, viewsets
+from rest_framework.permissions import AllowAny, IsAuthenticatedOrReadOnly
+from django.contrib.auth import authenticate
+from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.views import TokenObtainPairView
 
-from accounts.models import Account
-from accounts.serializers import SignupSerializer, LoginSerializer
+from .models import Account
+from .serializers import SignupSerializer, CustomTokenObtainPairSerializer
 
 
-class AccountViewSet(viewsets.ModelViewSet):
+class CustomTokenObtainPairView(TokenObtainPairView):
+    serializer_class = CustomTokenObtainPairSerializer
+
+
+class SignupViewSet(viewsets.ModelViewSet):
     queryset = Account.objects.all()
-    serializer_classes = {SignupSerializer,LoginSerializer}
     permission_classes = [AllowAny]
 
-    @action(detail=False, methods=['post'])
-    def signup(self, request):
-        try:
-            serializer = SignupSerializer(data=request.data)
-            serializer.is_valid(raise_exception=True)
-            account = serializer.save()
-            login(request, account)
-            return Response(SignupSerializer(account).data, status=status.HTTP_201_CREATED)
-        except Exception as e:
-            print(f"Signup error: {e}")
-            return Response({"error": str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-    @action(detail=False, methods=['post'])
-    def login(self, request):
-        serializer = LoginSerializer(data=request.data)
+    def post(self, request):
+        serializer = SignupSerializer(data=request.data)
         if serializer.is_valid():
-            account = serializer.validated_data['account']
-            login(request, account)
-            return Response(LoginSerializer(account).data)
+            user = serializer.save()
+            return Response({'message': 'User created successfully', 'user': serializer.data},
+                            status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    @action(detail=False, methods=['post'])
-    def logout(self, request):
-        logout(request)
-        return Response({'message': 'Logout realizado com sucesso'}, status=status.HTTP_200_OK)
+
+class LoginViewSet(viewsets.ModelViewSet):
+    queryset = Account.objects.all()
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        username = request.data.get('username')
+        password = request.data.get('password')
+
+        if username and password:
+            user = authenticate(request, username=username, password=password)
+            if user:
+                # Gerar token JWT
+                refresh = RefreshToken.for_user(user)
+                return Response({
+                    'access_token': str(refresh.access_token),
+                    'refresh_token': str(refresh),
+                    'message': 'Login successful'
+                }, status=status.HTTP_200_OK)
+            return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+        return Response({'error': 'Username and password are required'}, status=status.HTTP_400_BAD_REQUEST)

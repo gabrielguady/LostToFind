@@ -2,7 +2,7 @@
 
 from django.contrib.auth import authenticate
 from rest_framework import serializers
-
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from accounts.models import Account
 
 
@@ -43,3 +43,13 @@ class LoginSerializer(serializers.Serializer):
             data['account'] = account
             return data
         raise serializers.ValidationError("Credenciais incorretas")
+
+class CustomTokenObtainPairSerializer(TokenObtainPairSerializer):
+    def validate(self, attrs):
+        data = super().validate(attrs)
+        # Adicione dados personalizados ao token aqui
+        data.update({
+            'user_id': self.user.id,
+            'username': self.user.username,
+            'email': self.user.email})
+        return data
