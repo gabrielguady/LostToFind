@@ -1,4 +1,4 @@
 export type loginResponse = {
-  token: string;
-  email: string;
+  access_token: string;
+  refresh: string;
 }

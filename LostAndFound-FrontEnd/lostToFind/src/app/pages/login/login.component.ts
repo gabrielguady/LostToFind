@@ -23,7 +23,9 @@ export class LoginComponent implements OnInit {
 
   public loginForm! : FormGroup;
 
-  constructor(private loginService: LoginService, private router : Router) {
+  private router: Router = new Router();
+
+  constructor(private loginService: LoginService) {
 
   }
 
@@ -37,14 +39,14 @@ export class LoginComponent implements OnInit {
   submit(){
     this.loginService.login(this.loginForm.value.email, this.loginForm.value.password).subscribe(
       {
-        next: () => this.goToPage('home'),
+        next: () => this.navigate('home'),
         error: () => console.log("error"),
       }
     )
 
   }
 
-  public goToPage(route: string): void {
+  public navigate(route: string): void {
     const extras: NavigationExtras = {queryParamsHandling: 'merge'};
     this.router.navigate([route], extras).then();
   }

@@ -1,11 +1,8 @@
 from rest_framework import routers
-
-from accounts import viewsets
-
+from accounts.viewsets import LoginViewSet, SignupViewSet
 
 router = routers.DefaultRouter()
-
-
-router.register(r'Account', viewsets.AccountViewSet)
+router.register('auth', LoginViewSet, basename='login')
+router.register('auth', SignupViewSet, basename='signup')  # Registra a rota de signup
 
 urlpatterns = router.urls

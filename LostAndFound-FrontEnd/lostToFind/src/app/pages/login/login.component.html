@@ -3,7 +3,7 @@
   primaryBtnText="Login Now"
   secondaryBtnText="Signup Now"
   (submit)="submit()"
-  (navigate)="goToPage('signup')"
+  (navigate)="navigate('signup')"
   [isDisabled]="!loginForm.valid"
 >
   <form [formGroup]="loginForm" class="login-form">

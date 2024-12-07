@@ -1,9 +1,18 @@
 
-
 from django.contrib.auth import authenticate
 from rest_framework import serializers
 
 from accounts.models import Account
+
+class AccountSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Account
+        fields = '__all__'
+
+class TokenSerializer(serializers.Serializer):
+    access = serializers.CharField()
+    refresh = serializers.CharField()
+    account = AccountSerializer()
 
 
 class SignupSerializer(serializers.ModelSerializer):
@@ -38,7 +47,7 @@ class LoginSerializer(serializers.Serializer):
     password = serializers.CharField()
 
     def validate(self, data):
-        account = authenticate(username=data['email'], password=data['password'])
+        account = authenticate(email=data['email'], password=data['password'])
         if account and account.is_active:
             data['account'] = account
             return data

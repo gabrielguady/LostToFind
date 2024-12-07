@@ -3,7 +3,6 @@ import {DefaultLoginLayoutComponent} from '../../components/default-login-layout
 import {FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators} from '@angular/forms';
 import {InputPrimaryComponent} from '../../components/input-primary/input-primary.component';
 import {AutofocusDirective} from '../../../shared/directives/auto-focus-directive';
-import {HttpClient} from '@angular/common/http';
 import {NavigationExtras, Router} from '@angular/router';
 import {LoginService} from '../../../shared/services/login.service';
 
@@ -23,7 +22,7 @@ import {LoginService} from '../../../shared/services/login.service';
 export class SignupComponent  implements OnInit {
 
   public signupForm! : FormGroup;
-  constructor(private signupService: LoginService, private http: HttpClient, private router:Router) {
+  constructor(private signupService: LoginService, private router:Router) {
 
   }
 
@@ -46,7 +45,7 @@ export class SignupComponent  implements OnInit {
 
   }
 
-  public goToPage(route: string): void {
+  public navigate(route: string): void {
     const extras: NavigationExtras = {queryParamsHandling: 'merge'};
     this.router.navigate([route], extras).then();
   }

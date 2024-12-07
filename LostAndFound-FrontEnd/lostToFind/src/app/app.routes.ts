@@ -6,6 +6,7 @@ import {AuthGuardService} from '../shared/services/auth-guard.service'
 import {RegistryFoundItemComponent} from './pages/registry-item/registry-found-item.component';
 
 export const routes: Routes = [
+  { path:'', redirectTo:'login', pathMatch:'full'},
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},
   { path: 'home', component: HomeComponent, canActivate: [AuthGuardService]},
