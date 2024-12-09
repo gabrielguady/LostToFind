@@ -17,7 +17,7 @@
   <div>
     <label >Descrição</label>
     <input matInput formControlName="category" placeholder="Descrição do item" />
-    <mat-error *ngIf="formGroup.controls['description'].hasError('required')">A descrição é obrigatória.</mat-error>
+    <mat-error *ngIf="formGroup.controls['category'].hasError('required')">A descrição é obrigatória.</mat-error>
   </div>
 
   <!-- Data Encontrada -->
@@ -28,6 +28,6 @@
   </div>
   <!-- Botão de Enviar -->
   <div>
-    <button mat-raised-button type="submit" [disabled]="formGroup.invalid" (click)="saveOrUpdate()">Salvar</button>
+    <button mat-raised-button type="submit" [disabled]="formGroup.invalid">Salvar</button>
   </div>
 </form>

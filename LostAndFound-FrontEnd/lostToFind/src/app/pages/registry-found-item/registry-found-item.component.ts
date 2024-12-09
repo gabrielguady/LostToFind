@@ -11,12 +11,10 @@ import {AutofocusDirective} from '../../../shared/directives/auto-focus-directiv
 import {MatCheckbox} from '@angular/material/checkbox';
 import {NgForOf, NgIf} from '@angular/common';
 import {MatRadioButton, MatRadioGroup} from '@angular/material/radio';
-import {MatTableDataSource} from '@angular/material/table';
-
 
 
 @Component({
-  selector: 'app-registry-item',
+  selector: 'app-registry-found-item',
   standalone: true,
   imports: [
     MatButton,
@@ -40,7 +38,7 @@ import {MatTableDataSource} from '@angular/material/table';
 export class RegistryFoundItemComponent extends PageComponent<FoundItem> implements OnInit {
   public object: FoundItem = new FoundItem();
   public formGroup: FormGroup;
-  public categories: string[];
+
 
   constructor(private http: HttpClient) {
     super(http, URLS.FOUND_ITEM);

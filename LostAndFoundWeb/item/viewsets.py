@@ -8,6 +8,7 @@ from item.models import LostItem, FoundItem, ItemImage, Category
 class LostItemViewSet(viewsets.ModelViewSet):
     queryset = LostItem.objects.all()
     serializer_class =serializers.LostItemSerializer
+    permission_classes = [AllowAny]
 
 class FoundItemViewSet(viewsets.ModelViewSet):
     queryset = FoundItem.objects.all()

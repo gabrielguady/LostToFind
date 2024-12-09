@@ -30,6 +30,8 @@ class Category(models.Model):
         db_column='tx_items',
         null=False,
     )
+    def __str__(self):
+        return self.items
 
 class ItemImage(ModelBase):
     image = models.ImageField(
