@@ -1,0 +1,39 @@
+<form [formGroup]="formGroup" (ngSubmit)="saveOrUpdate()">
+  <!-- Título -->
+  <div>
+    <label >Título</label>
+    <input matInput formControlName="title" placeholder="Título do item" />
+    <mat-error *ngIf="formGroup.controls['title'].hasError('required')">O título é obrigatório.</mat-error>
+  </div>
+
+  <!-- Descrição -->
+  <div>
+    <label >Last seen details</label>
+    <input matInput type="text" formControlName="last_seen_details" placeholder="Descrição do item" />
+    <mat-error *ngIf="formGroup.controls['last_seen_details'].hasError('required')">A descrição é obrigatória.</mat-error>
+  </div>
+
+  <div>
+    <label >recompensa</label>
+    <input matInput type="number" formControlName="reward" placeholder="Descrição do item" />
+    <mat-error *ngIf="formGroup.controls['reward'].hasError('required')">A descrição é obrigatória.</mat-error>
+  </div>
+
+  <!-- Data Encontrada -->
+  <div>
+    <label >Data perdida</label>
+    <input matInput type="date" formControlName="date_lost" />
+    <mat-error *ngIf="formGroup.controls['date_lost'].hasError('required')">A data de encontro é obrigatória.</mat-error>
+  </div>
+
+  <!-- Categoria -->
+  <div>
+    <label >Categoria</label>
+    <input matInput formControlName="category" placeholder="Descrição do item" />
+    <mat-error *ngIf="formGroup.controls['category'].hasError('required')">A descrição é obrigatória.</mat-error>
+  </div>
+  <!-- Botão de Enviar -->
+  <div>
+    <button mat-raised-button type="submit" [disabled]="formGroup.invalid">Salvar</button>
+  </div>
+</form>
