@@ -5,5 +5,6 @@ export class FoundItem extends ModelBase{
   description: string;
   date_found: Date;
   is_resolved: boolean;
+  category: string;
 }
 

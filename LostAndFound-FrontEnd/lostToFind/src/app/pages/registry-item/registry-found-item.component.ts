@@ -9,8 +9,11 @@ import {MatError, MatFormField, MatFormFieldModule, MatLabel} from '@angular/mat
 import {MatInput, MatInputModule} from '@angular/material/input';
 import {AutofocusDirective} from '../../../shared/directives/auto-focus-directive';
 import {MatCheckbox} from '@angular/material/checkbox';
-import {NgIf} from '@angular/common';
+import {NgForOf, NgIf} from '@angular/common';
 import {MatRadioButton, MatRadioGroup} from '@angular/material/radio';
+import {MatTableDataSource} from '@angular/material/table';
+
+
 
 @Component({
   selector: 'app-registry-item',
@@ -28,7 +31,8 @@ import {MatRadioButton, MatRadioGroup} from '@angular/material/radio';
     MatRadioButton,
     MatRadioGroup,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    NgForOf
   ],
   templateUrl: './registry-found-item.component.html',
   styleUrl: './registry-found-item.component.css'
@@ -36,20 +40,22 @@ import {MatRadioButton, MatRadioGroup} from '@angular/material/radio';
 export class RegistryFoundItemComponent extends PageComponent<FoundItem> implements OnInit {
   public object: FoundItem = new FoundItem();
   public formGroup: FormGroup;
+  public categories: string[];
 
   constructor(private http: HttpClient) {
-    super(http,URLS.FOUND_ITEM);
+    super(http, URLS.FOUND_ITEM);
   }
 
 
   ngOnInit() {
     this.formGroup = new FormGroup({
-      title : new FormControl('', [Validators.required]),
-      description : new FormControl('', [Validators.required]),
-      date_found : new FormControl('', [Validators.required, Validators.required]),
-      is_resolved : new FormControl('', [Validators.required, Validators.required]),
+      title: new FormControl('', [Validators.required]),
+      description: new FormControl('', [Validators.required]),
+      date_found: new FormControl('', [Validators.required]),
+      category: new FormControl('', [Validators.required]),
     })
   }
+
 
   public saveOrUpdate(): void {
     if (this.formGroup.valid) {
@@ -59,13 +65,10 @@ export class RegistryFoundItemComponent extends PageComponent<FoundItem> impleme
           this.object[key] = value;
         }
       });
-      this.service.save(this.object).subscribe((response: FoundItem ) => {
+      this.service.save(this.object).subscribe((response: FoundItem) => {
         this.goToPage('home')
       })
     }
 
   }
-
-
-
 }

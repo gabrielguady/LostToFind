@@ -5,34 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66e8881-7e37-4d99-8b79-1b937eeeac9d" name="Changes" comment="cors headers adicionado">
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/components/default-login-layout/default-login-layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/components/default-login-layout/default-login-layout.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/services/login.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/services/login.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/types/login-response.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/types/login-response.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/registry-item/registry-found-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/registry-item/registry-found-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/registry-item/registry-found-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/registry-item/registry-found-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/services/auth-guard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/services/auth-guard.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/urls.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/urls.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LostAndFoundWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LostAndFoundWeb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2cc578-5247-452f-9eb3-fda02900fddc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2cc578-5247-452f-9eb3-fda02900fddc/storage_v2/_src_/database/lostAndFoundDB.7XvUKw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2cc578-5247-452f-9eb3-fda02900fddc/storage_v2/_src_/database/lostAndFoundDB.7XvUKw/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2cc578-5247-452f-9eb3-fda02900fddc/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3b2cc578-5247-452f-9eb3-fda02900fddc/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/viewsets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/item/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lostAndFound.config" beforeDir="false" afterPath="$PROJECT_DIR$/lostAndFound.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/viewsets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,35 +62,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.LostAndFoundWeb.executor": "Run",
-    "Docker.docker-compose.yml.db_postgres: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "Python.0001_initial.executor": "Run",
-    "Python.models.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "feat/tentativa-de-acertar-login",
-    "last_opened_file_path": "C:/gabriel/LostToFind/LostAndFoundWeb",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "inlay.hints",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Django Server.LostAndFoundWeb.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.db_postgres: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Python.0001_initial.executor&quot;: &quot;Run&quot;,
+    &quot;Python.models.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feat/tentativa-de-acertar-login&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/gabriel/LostToFind/LostAndFoundWeb&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\gabriel\LostToFind\LostAndFoundWeb" />
@@ -230,7 +211,9 @@
       <workItem from="1733524312876" duration="9260000" />
       <workItem from="1733595480346" duration="105000" />
       <workItem from="1733595595385" duration="338000" />
-      <workItem from="1733598871243" duration="11965000" />
+      <workItem from="1733598871243" duration="12734000" />
+      <workItem from="1733616663653" duration="6296000" />
+      <workItem from="1733679931273" duration="15913000" />
     </task>
     <task id="LOCAL-00001" summary="correção dos models">
       <option name="closed" value="true" />
@@ -256,7 +239,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733162502360</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="cors headers adicionado">
+      <option name="closed" value="true" />
+      <created>1733614526311</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733614526311</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

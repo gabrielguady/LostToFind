@@ -1,4 +1,5 @@
 import {ModelBase} from './model-base';
+import {ItemCategory} from './item-category';
 
 export class LostItem extends ModelBase{
   title: string;
@@ -6,4 +7,5 @@ export class LostItem extends ModelBase{
   reward : string;
   date_lost : Date;
   is_resolved: boolean;
+  category: ItemCategory;
 }
