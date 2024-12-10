@@ -1,5 +1,7 @@
 import {Component} from '@angular/core';
 import {NgForOf} from '@angular/common';
+import {PageComponent} from '../../page.component';
+import {ItemCategory} from '../../../../shared/models/item-category';
 
 class Category {
   name: string;
@@ -17,7 +19,7 @@ class Category {
   templateUrl: './category-sec.component.html',
   styleUrl: './category-sec.component.css'
 })
-export class CategorySecComponent {
+export class CategorySecComponent extends PageComponent<ItemCategory> {
   categories: Category[] = [
     {
       name: "Phone",

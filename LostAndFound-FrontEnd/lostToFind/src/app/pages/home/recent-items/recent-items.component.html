@@ -24,18 +24,12 @@
     <div
       *ngFor="let item of recentItems"
       class="item-card"
-      [attr.aria-label]="'Item: ' + item.name"
+      [attr.aria-label]="'Item: ' + item.category"
       tabindex="0"
     >
-      <img
-        [src]="item.image"
-        [alt]="item.name"
-        class="item-image"
-        loading="lazy"
-      />
       <div class="item-details">
         <div class="item-info">
-          <h3 class="item-name">{{item.name}}</h3>
+          <h3 class="item-name">{{item.}}</h3>
           <p class="item-category">{{item.category}}</p>
           <p class="item-date">{{item.date}}</p>
         </div>

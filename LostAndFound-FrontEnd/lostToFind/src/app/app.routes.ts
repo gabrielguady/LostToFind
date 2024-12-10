@@ -10,7 +10,7 @@ export const routes: Routes = [
   { path:'', redirectTo:'login', pathMatch:'full'},
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},
-  { path: 'home', component: HomeComponent, canActivate: [AuthGuardService]},
+  { path: 'home', component: HomeComponent},
   {path:  'itemFound/:action', component: RegistryFoundItemComponent, canActivate:[AuthGuardService]},
   {path:  'itemLost/:action', component: RegisterLostItemComponent, canActivate:[AuthGuardService]},
 
