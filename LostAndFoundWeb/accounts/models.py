@@ -4,20 +4,21 @@ from django.db import models
 
 
 class MyAccountManager(BaseUserManager):
-    def create_user(self, email, username, password=None):
+    def create_user(self, email, cellphone, username, password=None):
         if not email:
             raise ValueError('Users must have an email address')
         if not username:
             raise ValueError('Users must have an username')
-        user =  self.model(email=self.normalize_email(email), username=username)
+        user =  self.model(email=self.normalize_email(email), username=username, cellphone=cellphone)
         user.set_password(password)
         user.save(using=self._db)
         return user
 
-    def create_superuser(self, email, username, password):
+    def create_superuser(self, email, username, cellphone, password):
         user = self.create_user(
             email = self.normalize_email(email),
             username=username,
+            cellphone=cellphone,
             password=password,
         )
         user.is_admin = True
@@ -37,6 +38,11 @@ class Account(AbstractBaseUser):
         null=False,
         max_length=20,
         unique=True,
+    )
+    cellphone = models.IntegerField(
+        db_column='cellphone',
+        null=False,
+        default=000000000,
     )
     email = models.EmailField(
         db_column='email',

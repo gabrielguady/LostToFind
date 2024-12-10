@@ -18,10 +18,18 @@ class TokenSerializer(serializers.Serializer):
 class SignupSerializer(serializers.ModelSerializer):
     username = serializers.CharField(required=True)
     email = serializers.EmailField(required=True)
+    cellphone = serializers.IntegerField(required=True)
     password = serializers.CharField(write_only=True, required=True)
     class Meta:
         model = Account
-        fields = ['username', 'email', 'password']
+        fields = ['username','cellphone', 'email', 'password']
+
+    def validate_phone_number(self, value):
+        if not value.isdigit():
+            raise serializers.ValidationError("Phone number must contain only digits.")
+        if len(value) != 9:
+            raise serializers.ValidationError("Phone number must be exactly 9 digits.")
+        return value
 
     def validate_username(self, value):
         if Account.objects.filter(username=value).exists():
@@ -37,6 +45,7 @@ class SignupSerializer(serializers.ModelSerializer):
         account = Account.objects.create_user(
             username=validated_data['username'],
             email=validated_data['email'],
+            cellphone=validated_data['cellphone'],
             password=validated_data['password']
         )
         return account

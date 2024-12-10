@@ -1,9 +1,9 @@
-import {Component, forwardRef, Input, OnInit} from '@angular/core';
+import {Component, forwardRef, Input} from '@angular/core';
 import {ControlValueAccessor, FormsModule, NG_VALUE_ACCESSOR, ReactiveFormsModule} from '@angular/forms';
 import {AutofocusDirective} from '../../../shared/directives/auto-focus-directive';
 import {NgIf} from '@angular/common';
 
-type InputType = "text" | "password" | "email";
+type InputType = "text" | "password" | "email" | 'number';
 @Component({
   selector: 'app-input-primary',
   standalone: true,

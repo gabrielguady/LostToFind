@@ -30,18 +30,25 @@ export class SignupComponent  implements OnInit {
     this.signupForm = new FormGroup({
       username : new FormControl('', [Validators.required]),
       email : new FormControl('', [Validators.required]),
+      cellphone : new FormControl('', [Validators.required]),
       password: new FormControl('', [Validators.required, Validators.minLength(6)]),
       confirmPassword: new FormControl('', [Validators.required, Validators.minLength(6)]),
     })
   }
 
   submit(){
-    this.signupService.signup(this.signupForm.value.username,this.signupForm.value.email, this.signupForm.value.password).subscribe(
-      {
-        next: () => console.log('login success'),
-        error: () => console.log("error"),
+    if(this.signupForm.valid){
+      if (this.signupForm.value.password != this.signupForm.value.confirmPassword){
+         return console.log('error')
       }
-    )
+      this.signupService.signup(this.signupForm.value.username,this.signupForm.value.email,  this.signupForm.value.cellphone, this.signupForm.value.password).subscribe(
+        {
+          next: () => this.navigate('login'),
+          error: () => console.log("error"),
+        }
+      )
+
+    }
 
   }
 

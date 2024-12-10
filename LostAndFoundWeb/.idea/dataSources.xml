@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="LostAndFoundDB@localhost" uuid="4debbe69-823e-4849-abc7-a55cf3ddc9fa">
+    <data-source source="LOCAL" name="LostAndFoundDB@localhost" uuid="f658b6f6-23e4-4b36-9c05-4cb4040c1170">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/LostAndFoundDB</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5433/LostAndFoundDB</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

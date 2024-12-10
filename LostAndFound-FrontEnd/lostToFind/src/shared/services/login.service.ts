@@ -33,8 +33,8 @@ export class LoginService {
     )
   }
 
-  signup(username: string, email: string, password: string): Observable<loginResponse> {
-    return this.http.post<loginResponse>("http://localhost:8000/accounts/auth/signup/", {username, email, password}).pipe(
+  signup(username: string, email: string, cellphone: number, password: string): Observable<loginResponse> {
+    return this.http.post<loginResponse>("http://localhost:8000/accounts/auth/signup/", {username, email, cellphone, password}).pipe(
       tap(( value) => {
         sessionStorage.setItem("access-token", value.access_token)
         sessionStorage.setItem("refresh", value.refresh)

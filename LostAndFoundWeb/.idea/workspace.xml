@@ -5,14 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66e8881-7e37-4d99-8b79-1b937eeeac9d" name="Changes" comment="arrumei o create item lost e found">
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/signup/signup.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/LostAndFoundWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LostAndFoundWeb.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4debbe69-823e-4849-abc7-a55cf3ddc9fa.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4debbe69-823e-4849-abc7-a55cf3ddc9fa/storage_v2/_src_/database/LostAndFoundDB.DUgb8A.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4debbe69-823e-4849-abc7-a55cf3ddc9fa/storage_v2/_src_/database/LostAndFoundDB.DUgb8A/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7af25550-aa7f-4532-8919-da5f69ece5a9.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7af25550-aa7f-4532-8919-da5f69ece5a9/storage_v2/_src_/database/lostAndFoundDB.7XvUKw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7af25550-aa7f-4532-8919-da5f69ece5a9/storage_v2/_src_/database/lostAndFoundDB.7XvUKw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7af25550-aa7f-4532-8919-da5f69ece5a9/storage_v2/_src_/database/lostAndFoundDB.7XvUKw/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7af25550-aa7f-4532-8919-da5f69ece5a9/storage_v2/_src_/database/lostAndFoundDB.7XvUKw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7af25550-aa7f-4532-8919-da5f69ece5a9/storage_v2/_src_/database/lostAndFoundDB.7XvUKw/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7af25550-aa7f-4532-8919-da5f69ece5a9/storage_v2/_src_/database/lostAndFoundDB.7XvUKw/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7af25550-aa7f-4532-8919-da5f69ece5a9/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7af25550-aa7f-4532-8919-da5f69ece5a9/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f7db3b3-4ade-4ec6-9612-255ce2b20812.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f7db3b3-4ade-4ec6-9612-255ce2b20812/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f7db3b3-4ade-4ec6-9612-255ce2b20812/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f7db3b3-4ade-4ec6-9612-255ce2b20812/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f7db3b3-4ade-4ec6-9612-255ce2b20812/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f7db3b3-4ade-4ec6-9612-255ce2b20812/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9f7db3b3-4ade-4ec6-9612-255ce2b20812/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcd5026f-129f-46a3-aa8f-d7f226d6acf6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcd5026f-129f-46a3-aa8f-d7f226d6acf6/storage_v2/_src_/database/LostAndFoundDB.DUgb8A.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcd5026f-129f-46a3-aa8f-d7f226d6acf6/storage_v2/_src_/database/LostAndFoundDB.DUgb8A/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcd5026f-129f-46a3-aa8f-d7f226d6acf6/storage_v2/_src_/database/LostAndFoundDB.DUgb8A/schema/information_schema.FNRwLQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcd5026f-129f-46a3-aa8f-d7f226d6acf6/storage_v2/_src_/database/LostAndFoundDB.DUgb8A/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcd5026f-129f-46a3-aa8f-d7f226d6acf6/storage_v2/_src_/database/LostAndFoundDB.DUgb8A/schema/pg_catalog.0S1ZNQ.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/dcd5026f-129f-46a3-aa8f-d7f226d6acf6/storage_v2/_src_/database/LostAndFoundDB.DUgb8A/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LostAndFoundWeb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LostAndFoundWeb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/filters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/migrations/0002_category_founditem_category_lostitem_category.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lostAndFound.config" beforeDir="false" afterPath="$PROJECT_DIR$/lostAndFound.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +129,7 @@
       <recent name="C:\Repositórios\ProjetoLostAndFound\LostToFind\LostAndFoundWeb\item" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Django Server.LostAndFoundWeb">
     <configuration name="LostAndFoundWeb" type="Python.DjangoServer" factoryName="Django server">
       <module name="LostAndFoundWeb" />
       <option name="ENV_FILES" value="" />
@@ -216,6 +244,9 @@
       <workItem from="1733679931273" duration="17745000" />
       <workItem from="1733759292049" duration="9418000" />
       <workItem from="1733783174989" duration="7709000" />
+      <workItem from="1733802854482" duration="2986000" />
+      <workItem from="1733843663070" duration="206000" />
+      <workItem from="1733843927408" duration="3477000" />
     </task>
     <task id="LOCAL-00001" summary="correção dos models">
       <option name="closed" value="true" />
