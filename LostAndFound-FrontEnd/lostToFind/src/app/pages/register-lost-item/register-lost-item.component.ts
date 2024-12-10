@@ -43,6 +43,7 @@ export class RegisterLostItemComponent extends PageComponent<LostItem> implement
   }
 
   public saveOrUpdate(): void {
+    console.log(this.formGroup.value);
     if (this.formGroup.valid) {
       console.log(this.formGroup.value);
       Object.keys(this.formGroup.controls).forEach(key => {

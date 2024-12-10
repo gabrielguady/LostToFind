@@ -177,3 +177,11 @@ CORS_ALLOW_METHODS = (
     "POST",
     "PUT",
 )
+
+AWS_S3_ACCESS_KEY_ID = os.environ.get("AWS_S3_ACCESS_KEY_ID", None)
+AWS_S3_SECRET_ACCESS_KEY = os.environ.get("AWS_S3_SECRET_ACCESS_KEY", None)
+AWS_STORAGE_BUCKET_NAME = os.environ.get("AWS_STORAGE_BUCKET_NAME", None)
+AWS_S3_ENDPOINT_URL = os.environ.get("AWS_S3_ENDPOINT_URL", None)
+AWS_QUERYSTRING_AUTH = os.environ.get("AWS_QUERYSTRING_AUTH", False)
+AWS_S3_REGION_NAME = os.environ.get("AWS_S3_REGION_NAME", None)
+AWS_DEFAULT_ACL = 'public-read'

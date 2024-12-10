@@ -3,15 +3,39 @@ services:
   db_postgres:
     image: postgres:14
     container_name: db_postgres
+    restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123456
-      POSTGRES_DB: lostAndFoundDB
+      POSTGRES_DB: LostAndFoundDB
     ports:
       - "5433:5432"
 
     volumes:
       - postgres-data:/var/lib/postgresql/data
+    networks:
+      - lost_network
+
+  minio:
+    hostname: minio
+    image: 'minio/minio:latest'
+    restart: always
+    environment:
+      MINIO_ROOT_USER: minioblonded
+      MINIO_ROOT_PASSWORD: minioformvp
+    ports:
+      - '9000:9000'
+      - '9001:9001'
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio-data:/data
+
+networks:
+  lost_network:
+    driver: bridge
+
 
 volumes:
   postgres-data:
+  minio-data:
+    driver: local

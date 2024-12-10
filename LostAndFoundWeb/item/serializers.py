@@ -9,7 +9,7 @@ class LostItemSerializer(serializers.ModelSerializer):
     category= serializers.CharField()
     class Meta:
         model = models.LostItem
-        fields = ['id', 'title', 'last_seen_details', 'reward', 'date_lost', 'is_resolved', 'category',]
+        fields = ['id', 'title', 'last_seen_details', 'reward', 'date_lost', 'is_resolved', 'category']
 
     def validate_category(self, value):
         try:
