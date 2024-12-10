@@ -1,0 +1,48 @@
+<section class="recents-section">
+  <div class="tutorial-card" tabindex="0" role="button">
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f2d6b111c52475a48b438ff90b2ba157b88998801c638776faca04d51957322?placeholderIfAbsent=true&apiKey=ce275dddc72e48378c03f0bdece66cd6"
+      alt="Tutorial illustration"
+      class="tutorial-image"
+      loading="lazy"
+    />
+    <div class="tutorial-content">
+      <h2 class="tutorial-title">
+        <span class="emphasis">First time here?... Feeling</span>
+        <span class="emphasis emphasis-light">Lost?</span>
+      </h2>
+      <p class="tutorial-description">
+        Click here.<br />
+        We gonna teach your first steps.
+      </p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Recents</h2>
+
+  <div class="items-grid">
+    <div
+      *ngFor="let item of recentItems"
+      class="item-card"
+      [attr.aria-label]="'Item: ' + item.name"
+      tabindex="0"
+    >
+      <img
+        [src]="item.image"
+        [alt]="item.name"
+        class="item-image"
+        loading="lazy"
+      />
+      <div class="item-details">
+        <div class="item-info">
+          <h3 class="item-name">{{item.name}}</h3>
+          <p class="item-category">{{item.category}}</p>
+          <p class="item-date">{{item.date}}</p>
+        </div>
+        <div [class]="'status-badge ' + item.statusClass">
+          {{item.status}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

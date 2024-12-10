@@ -1,0 +1,22 @@
+<section class="categories-section">
+  <h2 class="section-title">Categories</h2>
+  <div class="categories-scroll">
+    <div class="categories-grid">
+      <div
+        *ngFor="let category of categories"
+        [attr.aria-label]="category.name"
+        class="category-item"
+        tabindex="0"
+        role="button"
+      >
+        <img
+          [src]="category.icon"
+          [alt]="category.altText"
+          class="category-icon"
+          loading="lazy"
+        />
+        <span class="category-name">{{category.name}}</span>
+      </div>
+    </div>
+  </div>
+</section>

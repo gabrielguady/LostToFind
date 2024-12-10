@@ -1,0 +1,43 @@
+.categories-section {
+  width: 100%;
+  color: #000;
+  text-align: center;
+}
+.section-title {
+  font: 700 30px Montserrat, sans-serif;
+  text-align: left;
+  margin: 0 0 4px;
+}
+.categories-scroll {
+  overflow-x: auto;
+  padding: 10px;
+}
+.categories-grid {
+  display: flex;
+  gap: 70px;
+  font: 400 22px Ubuntu, sans-serif;
+}
+.category-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 179px;
+  min-height: 213px;
+  padding: 11px 8px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.category-icon {
+  width: 163px;
+  aspect-ratio: 1.03;
+  border-radius: 50px;
+  object-fit: contain;
+}
+.category-name {
+  margin-top: 10px;
+}
+@media (max-width: 991px) {
+  .categories-scroll {
+    max-width: 100%;
+  }
+}
