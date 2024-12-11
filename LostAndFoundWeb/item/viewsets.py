@@ -19,4 +19,4 @@ class FoundItemViewSet(viewsets.ModelViewSet):
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = serializers.CategoryItemSerializer
-    permission_classes = [AllowAny]
+    permission_classes = [IsAdminUser]

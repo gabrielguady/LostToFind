@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from unicodedata import category
 
 from item import models
 from item.models import Category
