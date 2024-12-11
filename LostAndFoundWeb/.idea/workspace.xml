@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66e8881-7e37-4d99-8b79-1b937eeeac9d" name="Changes" comment="arrumei o create item lost e found">
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/category-sec/category-sec.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/category-sec/category-sec.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/recent-items/recent-items.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/recent-items/recent-items.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/recent-items/recent-items.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/recent-items/recent-items.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/item/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/viewsets.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +73,7 @@
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
-    "git-widget-placeholder": "feat/guady-home",
+    "git-widget-placeholder": "feat/ts-de-recente-items-lost",
     "last_opened_file_path": "C:/gabriel/LostToFind/LostAndFoundWeb",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
