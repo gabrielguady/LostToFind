@@ -4,18 +4,12 @@
     <div class="categories-grid">
       <div
         *ngFor="let category of categories"
-        [attr.aria-label]="category.name"
+        [attr.aria-label]="category.items"
         class="category-item"
         tabindex="0"
         role="button"
       >
-        <img
-          [src]="category.icon"
-          [alt]="category.altText"
-          class="category-icon"
-          loading="lazy"
-        />
-        <span class="category-name">{{category.name}}</span>
+        <h3 class="category-name">{{category.items}}</h3>
       </div>
     </div>
   </div>
