@@ -7,7 +7,7 @@ import {RegistryFoundItemComponent} from './pages/registry-found-item/registry-f
 import {RegisterLostItemComponent} from './pages/register-lost-item/register-lost-item.component';
 
 export const routes: Routes = [
-  { path:'', redirectTo:'login', pathMatch:'full'},
+  { path:'', redirectTo:'home', pathMatch:'full'},
   { path: 'login', component: LoginComponent},
   { path: 'signup', component: SignupComponent},
   { path: 'home', component: HomeComponent},

@@ -29,12 +29,11 @@
     >
       <div class="item-details">
         <div class="item-info">
-          <h3 class="item-name">{{item.}}</h3>
+          <h3 class="item-name">{{item.title}}</h3>
           <p class="item-category">{{item.category}}</p>
-          <p class="item-date">{{item.date}}</p>
+          <p class="item-date">{{item.date_lost}}</p>
         </div>
-        <div [class]="'status-badge ' + item.statusClass">
-          {{item.status}}
+        <div [class]="'status-badge '"> Item Lost
         </div>
       </div>
     </div>

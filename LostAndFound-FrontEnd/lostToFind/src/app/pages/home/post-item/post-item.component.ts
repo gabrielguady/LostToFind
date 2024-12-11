@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
   styleUrl: './post-item.component.css'
 })
 export class PostItemComponent {
-
 }
