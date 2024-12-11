@@ -5,4 +5,5 @@ router = routers.DefaultRouter()
 router.register('auth', LoginViewSet, basename='login')
 router.register('auth', SignupViewSet, basename='signup')  # Registra a rota de signup
 
+
 urlpatterns = router.urls

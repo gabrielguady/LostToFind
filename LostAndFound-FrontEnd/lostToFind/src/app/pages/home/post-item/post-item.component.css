@@ -26,11 +26,11 @@
   min-width: 240px;
 }
 .title {
-  font-weight: 900;
+  font-weight: 500;
   margin: 0;
 }
 .description {
-  font-weight: 400;
+  font-weight: 900;
   line-height: 47px;
   margin: 0;
 }

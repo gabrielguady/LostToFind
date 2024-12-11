@@ -1,0 +1,154 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.navigation-container {
+  background-color: rgba(23, 20, 128, 1);
+  display: flex;
+  align-items: center;
+  gap: 40px 150px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 22px 44px;
+  font: 400 22px Ubuntu, sans-serif;
+}
+
+.brand-container {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  align-items: start;
+  color: #fff;
+  white-space: nowrap;
+  justify-content: start;
+  margin: auto 0;
+  padding: 0 1px;
+  font: 900 40px Montserrat, sans-serif;
+}
+
+.brand-logo {
+  aspect-ratio: 2.14;
+  object-fit: contain;
+  object-position: center;
+  width: 105px;
+}
+
+.search-container {
+  border-radius: 20px;
+  background-color: #fff;
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  min-height: 65px;
+  align-items: center;
+  gap: 40px 379px;
+  overflow: hidden;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 499px;
+  margin: auto 0;
+  padding: 15px 20px;
+  border: 1px solid #fff;
+}
+
+.search-input {
+  align-self: stretch;
+  margin: auto 0;
+  border: none;
+  background: transparent;
+  color: rgba(115, 115, 115, 1);
+  font: inherit;
+  width: 100%;
+  outline: none;
+}
+
+.search-icon {
+  aspect-ratio: 1.03;
+  object-fit: contain;
+  object-position: center;
+  width: 36px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.user-container {
+  align-self: stretch;
+  display: flex;
+  min-width: 240px;
+  align-items: center;
+  gap: 10px;
+  justify-content: start;
+  flex-grow: 1;
+  width: 269px;
+  margin: auto 0;
+}
+
+.user-profile {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  white-space: nowrap;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.profile-image {
+  aspect-ratio: 1.16;
+  object-fit: contain;
+  object-position: center;
+  width: 50px;
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.profile-name {
+  align-self: stretch;
+  width: 107px;
+  margin: auto 0;
+}
+
+.logout-button {
+  border-radius: 20px;
+  background-color: #fff;
+  align-self: stretch;
+  color: #000;
+  width: 138px;
+  margin: auto 0;
+  padding: 13px 27px;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+@media (max-width: 991px) {
+  .navigation-container {
+    padding: 0 20px;
+  }
+
+  .brand-container {
+    white-space: initial;
+  }
+
+  .search-container {
+    max-width: 100%;
+    white-space: initial;
+  }
+
+  .user-profile {
+    white-space: initial;
+  }
+
+  .logout-button {
+    padding: 0 20px;
+  }
+}

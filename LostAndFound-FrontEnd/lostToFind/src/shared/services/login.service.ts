@@ -41,4 +41,9 @@ export class LoginService {
       })
     )
   }
+
+  logout(){
+    sessionStorage.removeItem('access_token');
+    sessionStorage.removeItem('refresh');
+  }
 }

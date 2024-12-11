@@ -1,18 +1,22 @@
 import {Component, Input} from '@angular/core';
-import {RecentItemsComponent} from './recent-items/recent-items.component';
+import {RecentItemsLostComponent} from './recent-items-lost/recent-items-lost.component';
 import {PostItemComponent} from './post-item/post-item.component';
 import {CategorySecComponent} from './category-sec/category-sec.component';
 import {NavComponent} from './nav/nav.component';
+import {RecentItemsFoundComponent} from './recente-items-found/recent-items-found.component';
+import {NavLoggedComponent} from './nav/nav-logged/nav-logged.component';
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
-    RecentItemsComponent,
+    RecentItemsLostComponent,
     PostItemComponent,
     CategorySecComponent,
-    NavComponent
+    NavComponent,
+    RecentItemsFoundComponent,
+    NavLoggedComponent
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'

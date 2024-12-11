@@ -1,0 +1,20 @@
+<section class="recents-section">
+  <div class="items-grid">
+    <div
+      *ngFor="let item of items"
+      class="item-card"
+      [attr.aria-label]="'Item: ' + item.category"
+      tabindex="0"
+    >
+      <div class="item-details">
+        <div class="item-info">
+          <h3 class="item-name">{{item.title}}</h3>
+          <p class="item-category">{{item.category}}</p>
+          <time class="item-date">{{item.date_found}}</time>
+        </div>
+        <div [class]="'status-badge '"> Item Found
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

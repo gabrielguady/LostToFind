@@ -1,0 +1,39 @@
+<nav class="navigation-container" role="navigation">
+  <div class="brand-container">
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/eaf2edbbb3d347bff96ebafc18265da8685ca70c3f7d100f72bf0ab8d726c755?placeholderIfAbsent=true&apiKey=ce275dddc72e48378c03f0bdece66cd6"
+      class="brand-logo"
+      alt="ToFind company logo"
+    />
+    <div class="brand-name">ToFind</div>
+  </div>
+  <div class="search-container" role="search">
+    <label for="searchInput" class="visually-hidden">Search</label>
+    <input
+      type="search"
+      id="searchInput"
+      class="search-input"
+      placeholder="Search..."
+      aria-label="Search"
+    />
+    <img
+      loading="lazy"
+      src="https://cdn.builder.io/api/v1/image/assets/TEMP/60a15ebf08ba210d4321f55a489ab0177fe3eb635f504472523cf5dc136704fa?placeholderIfAbsent=true&apiKey=ce275dddc72e48378c03f0bdece66cd6"
+      class="search-icon"
+      alt=""
+    />
+  </div>
+  <div class="user-container">
+    <div *ngFor="let user of users" class="user-profile">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/523085bf06b5670b7f8f6dab616d4274f0dc29d2c165a85c16695684c0f0e592?placeholderIfAbsent=true&apiKey=ce275dddc72e48378c03f0bdece66cd6"
+        class="profile-image"
+        alt="User profile"
+      />
+      <span  class="profile-name">{{user.username}}</span>
+    </div>
+    <button class="logout-button" aria-label="Log out">Log out</button>
+  </div>
+</nav>

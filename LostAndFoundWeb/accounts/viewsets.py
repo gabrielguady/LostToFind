@@ -1,17 +1,42 @@
-from rest_framework_simplejwt.exceptions import TokenError
-from rest_framework_simplejwt.tokens import RefreshToken
+from rest_framework_simplejwt.exceptions import TokenError, InvalidToken
+from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from django.contrib.auth import authenticate
 
+from accounts.models import Account
 from accounts.serializers import SignupSerializer, LoginSerializer, AccountSerializer, TokenSerializer
 
 
 class LoginViewSet(viewsets.ViewSet):
+    queryset = Account.objects.all()
     permission_classes = [AllowAny]
     serializer_class = LoginSerializer
+
+    @action(detail=False, methods=['post'])
+    def validate_token(self, request):
+        token_string = request.data.get('token')
+
+        if not token_string:
+            return Response({
+                'valid': False,
+                'error': 'No token provided'
+            }, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            AccessToken(token_string)
+
+            return Response({
+                'valid': True
+            }, status=status.HTTP_200_OK)
+
+        except (TokenError, InvalidToken):
+            return Response({
+                'valid': False,
+                'error': 'Invalid or expired token'
+            }, status=status.HTTP_401_UNAUTHORIZED)
 
     @action(detail=False, methods=['post'])
     def login(self, request):

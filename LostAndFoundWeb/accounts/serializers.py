@@ -7,7 +7,7 @@ from accounts.models import Account
 class AccountSerializer(serializers.ModelSerializer):
     class Meta:
         model = Account
-        fields = '__all__'
+        fields = 'username'
 
 class TokenSerializer(serializers.Serializer):
     access = serializers.CharField()
