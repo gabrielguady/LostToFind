@@ -2,7 +2,7 @@ from rest_framework_simplejwt.exceptions import TokenError, InvalidToken
 from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from django.contrib.auth import authenticate
 
@@ -11,9 +11,19 @@ from accounts.serializers import SignupSerializer, LoginSerializer, AccountSeria
 
 
 class LoginViewSet(viewsets.ViewSet):
-    queryset = Account.objects.all()
-    permission_classes = [AllowAny]
     serializer_class = LoginSerializer
+
+    @action(detail=False, methods=['get'],
+    permission_classes=[AllowAny])
+    def current_user(self, request):
+        # Verifica se o usuário está autenticado
+        if request.user.is_authenticated:
+            serializer = AccountSerializer(request.user)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(
+            {'error': 'Not authenticated', 'message': 'You must be logged in to view user data'},
+            status=status.HTTP_401_UNAUTHORIZED
+        )
 
     @action(detail=False, methods=['post'])
     def validate_token(self, request):

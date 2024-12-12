@@ -1,9 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {NgForOf} from '@angular/common';
 import {ItemCategory} from "../../../../shared/models/item-category";
-import {Router} from "@angular/router";
 import {AppService} from "../../../../shared/services/app.service";
-import {HttpClient, HttpParams} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 import {URLS} from "../../../../shared/urls";
 
 
@@ -18,9 +17,9 @@ import {URLS} from "../../../../shared/urls";
 })
 export class CategorySecComponent implements OnInit {
   categories: ItemCategory[] = [];
-  private router: Router = new Router();
+  // private router: Router = new Router();
   private service: AppService<ItemCategory>
-  private parameters: HttpParams = new HttpParams();
+  // private parameters: HttpParams = new HttpParams();
 
 
   constructor(private http: HttpClient) {

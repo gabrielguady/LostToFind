@@ -7,7 +7,7 @@ from accounts.models import Account
 class AccountSerializer(serializers.ModelSerializer):
     class Meta:
         model = Account
-        fields = 'username'
+        fields = ['id','email','username']
 
 class TokenSerializer(serializers.Serializer):
     access = serializers.CharField()
@@ -24,7 +24,7 @@ class SignupSerializer(serializers.ModelSerializer):
         model = Account
         fields = ['username','cellphone', 'email', 'password']
 
-    def validate_phone_number(self, value):
+    def validate_cellphone(self, value):
         if not value.isdigit():
             raise serializers.ValidationError("Phone number must contain only digits.")
         if len(value) != 9:
@@ -51,13 +51,20 @@ class SignupSerializer(serializers.ModelSerializer):
         return account
 
 
+
+
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField()
     password = serializers.CharField()
 
     def validate(self, data):
         account = authenticate(email=data['email'], password=data['password'])
-        if account and account.is_active:
-            data['account'] = account
-            return data
-        raise serializers.ValidationError("Credenciais incorretas")
+
+        if account is None:
+            raise serializers.ValidationError("Credenciais incorretas.")
+
+        if not account.is_active:
+            raise serializers.ValidationError("Usuário inativo. ")
+
+        data['account'] = account
+        return data

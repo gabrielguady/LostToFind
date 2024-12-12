@@ -4,8 +4,6 @@ import {HttpClient} from '@angular/common/http';
 import {URLS} from '../../../../shared/urls';
 import {NgForOf} from '@angular/common';
 import {AppService} from '../../../../shared/services/app.service';
-import {Router} from '@angular/router';
-
 
 
 @Component({
@@ -20,7 +18,7 @@ import {Router} from '@angular/router';
 export class RecentItemsFoundComponent implements OnInit {
   public items: FoundItem[] = [];
 
-  private router: Router = new Router();
+  // private router: Router = new Router();
   private service: AppService<FoundItem>
 
   constructor(private http: HttpClient) {

@@ -25,15 +25,15 @@
     />
   </div>
   <div class="user-container">
-    <div *ngFor="let user of users" class="user-profile">
+    <div class="user-profile">
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/523085bf06b5670b7f8f6dab616d4274f0dc29d2c165a85c16695684c0f0e592?placeholderIfAbsent=true&apiKey=ce275dddc72e48378c03f0bdece66cd6"
         class="profile-image"
         alt="User profile"
       />
-      <span  class="profile-name">{{user.username}}</span>
+      <span  class="profile-name">{{ username }}</span>
     </div>
-    <button class="logout-button" aria-label="Log out">Log out</button>
+    <button class="logout-button" aria-label="Log out" (click)="logout()">Log out</button>
   </div>
 </nav>

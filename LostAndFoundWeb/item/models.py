@@ -49,11 +49,11 @@ class ItemImage(ModelBase):
         managed = True
 
 class LostItem(ModelBase):
-    user = models.ForeignKey(
-        Account,
-        on_delete=PROTECT,
-        db_column='user',
-    )
+    # user = models.ForeignKey(
+    #     Account,
+    #     on_delete=PROTECT,
+    #     db_column='user',
+    # )
     title = models.CharField(
         db_column='tx_title',
         null=False,

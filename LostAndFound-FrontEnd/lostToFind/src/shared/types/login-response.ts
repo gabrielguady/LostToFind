@@ -1,4 +1,5 @@
 export type loginResponse = {
-  access_token: string;
+  access: string;
   refresh: string;
+  user?: any;
 }

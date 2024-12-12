@@ -1,10 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {Account} from '../../../../../shared/models/accounts';
-import {Router} from '@angular/router';
-import {AppService} from '../../../../../shared/services/app.service';
-import {HttpClient} from '@angular/common/http';
-import {URLS} from '../../../../../shared/urls';
 import {NgForOf, NgIf} from '@angular/common';
+import {LoginService} from "../../../../../shared/services/login.service";
 
 @Component({
   selector: 'app-nav-logged',
@@ -17,29 +13,36 @@ import {NgForOf, NgIf} from '@angular/common';
   styleUrl: './nav-logged.component.css'
 })
 export class NavLoggedComponent implements OnInit {
-  public users: Account[]=[];
+  username: string | null = null;
 
-  private router: Router = new Router();
-  private service: AppService<Account>
+  constructor(private loginService: LoginService) {}
 
-  constructor(private http: HttpClient) {
-    this.service =  new AppService<Account>(http,URLS.ACCOUNT)
+  ngOnInit(): void {
+    if (this.loginService.isLoggedIn()) {
+      this.loadUserDetails();
+    }
   }
 
-  ngOnInit() {
-    this.search()
-  }
-
-  public search(resetIndex: boolean = false): void {
-    this.service.getAll().subscribe({
-      next: (data: Account[]) => {
-        this.users = data;
-
+  loadUserDetails(): void {
+    this.loginService.getCurrentUser().subscribe(
+      (data) => {
+        // Supondo que o nome do usuário esteja disponível na resposta
+        this.username = data.username;
       },
-      error: (err) => {
-        console.error('Error loading user');
+      (error) => {
+        console.error('Erro ao carregar os detalhes do usuário', error);
       }
+    );
+  }
 
-    });
+
+
+  logout(): void {
+    this.loginService.logout();
+    this.username = null;
+    this.reloadPage()
+  }
+  reloadPage(){
+    window.location.reload()
   }
 }

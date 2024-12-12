@@ -1,6 +1,9 @@
 <div class="home-container">
-  <div>
-  <header><app-nav-logged></app-nav-logged></header>
+  <div *ngIf="loggedIn">
+    <header><app-nav-logged></app-nav-logged></header>
+  </div>
+  <div *ngIf="!loggedIn">
+    <header><app-nav></app-nav></header>
   </div>
   <div class="main-content">
     <app-category-sec></app-category-sec>
