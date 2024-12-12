@@ -1,0 +1,154 @@
+.address-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  color: #000;
+  white-space: nowrap;
+  text-align: center;
+  padding: 40px 38px;
+  font: 500 22px Ubuntu, sans-serif;
+}
+
+.header-image {
+  aspect-ratio: 3.36;
+  object-fit: contain;
+  object-position: center;
+  width: 976px;
+  max-width: 100%;
+}
+
+.form-grid {
+  display: flex;
+  margin-top: 40px;
+  align-items: start;
+  gap: 40px;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  border-radius: 10px;
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  width: 468px;
+}
+
+.address-field {
+  border-radius: 10px;
+  background-color: rgba(217, 217, 217, 0.3);
+  padding: 8px 15px 42px;
+}
+
+.postal-code-field {
+  border-radius: 10px;
+  background-color: rgba(217, 217, 217, 0.3);
+  margin-top: 40px;
+  padding: 8px 15px 42px;
+}
+
+.location-group {
+  border-radius: 0;
+  display: flex;
+  min-width: 240px;
+  flex-direction: column;
+  width: 468px;
+}
+
+.state-field-wrapper {
+  border-radius: 10px;
+  background-color: rgba(217, 217, 217, 0.3);
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 8px 19px 28px;
+}
+
+.state-field {
+  align-self: start;
+}
+
+.dropdown-icon {
+  aspect-ratio: 1.11;
+  object-fit: contain;
+  object-position: center;
+  width: 20px;
+  border-radius: 4px;
+  align-self: end;
+  margin-top: 21px;
+}
+
+.city-field {
+  border-radius: 10px;
+  background-color: rgba(217, 217, 217, 0.3);
+  margin-top: 40px;
+  padding: 12px 14px 38px;
+}
+
+.divider-line {
+  aspect-ratio: 200;
+  object-fit: contain;
+  object-position: center;
+  width: 981px;
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+.footer-image {
+  aspect-ratio: 1.76;
+  object-fit: contain;
+  object-position: center;
+  width: 940px;
+  border-radius: 20px;
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .address-container {
+    white-space: initial;
+    padding: 0 20px;
+  }
+
+  .form-grid {
+    max-width: 100%;
+    white-space: initial;
+  }
+
+  .input-group {
+    max-width: 100%;
+    white-space: initial;
+  }
+
+  .address-field {
+    max-width: 100%;
+    padding-right: 20px;
+    white-space: initial;
+  }
+
+  .postal-code-field {
+    max-width: 100%;
+    padding-right: 20px;
+    white-space: initial;
+  }
+
+  .location-group {
+    max-width: 100%;
+    white-space: initial;
+  }
+
+  .state-field-wrapper {
+    max-width: 100%;
+    padding-right: 20px;
+    white-space: initial;
+  }
+
+  .city-field {
+    max-width: 100%;
+    padding-right: 20px;
+    white-space: initial;
+  }
+}

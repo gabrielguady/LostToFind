@@ -27,7 +27,7 @@ export class LoginService {
       );
   }
   signup(username: string, email: string, cellphone: number, password: string): Observable<loginResponse> {
-    return this.http.post<loginResponse>("http://localhost:8000/accounts/auth/signup/", {username, email, cellphone, password}).pipe(
+    return this.http.post<loginResponse>("http://localhost:8000/accounts/auth/signup/", {username, email, cellphone, password}, { withCredentials: true }).pipe(
       tap(( value) => {
         sessionStorage.setItem("access-token", value.access)
         sessionStorage.setItem("refresh", value.refresh)

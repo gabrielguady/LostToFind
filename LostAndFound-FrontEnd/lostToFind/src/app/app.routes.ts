@@ -1,4 +1,4 @@
-import { Routes } from '@angular/router';
+import {Routes} from '@angular/router';
 import {LoginComponent} from './pages/login/login.component';
 import {SignupComponent} from './pages/signup/signup.component';
 import {HomeComponent} from './pages/home/home.component';
@@ -13,5 +13,4 @@ export const routes: Routes = [
   { path: 'home', component: HomeComponent},
   {path:  'itemFound/:action', component: RegistryFoundItemComponent, canActivate:[AuthGuardService]},
   {path:  'itemLost/:action', component: RegisterLostItemComponent, canActivate:[AuthGuardService]},
-
 ];

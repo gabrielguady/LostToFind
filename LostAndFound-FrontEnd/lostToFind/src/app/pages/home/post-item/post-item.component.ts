@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {NavigationExtras, Router} from '@angular/router';
 
 @Component({
   selector: 'app-post-item',
@@ -8,4 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './post-item.component.css'
 })
 export class PostItemComponent {
+
+  private router : Router = new Router();
+
+
+  public navigate(route: string): void {
+    const extras: NavigationExtras = {queryParamsHandling: 'merge'};
+    this.router.navigate([route], extras).then();
+  }
 }

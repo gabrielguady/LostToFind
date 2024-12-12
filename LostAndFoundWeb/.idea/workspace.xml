@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66e8881-7e37-4d99-8b79-1b937eeeac9d" name="Changes" comment="arrumei o create item lost e found">
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/form-item-found/form-item-found.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/form-item-lost/form-item-lost.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/home.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/nav/nav-logged/nav-logged.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/nav/nav-logged/nav-logged.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/nav/nav-logged/nav-logged.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/app/pages/home/nav/nav-logged/nav-logged.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/models/item-category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/models/item-category.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/services/auth-guard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/services/auth-guard.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/services/auth-interceptors.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/services/auth-interceptors.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/services/login.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/services/login.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/types/login-response.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../LostAndFound-FrontEnd/lostToFind/src/shared/types/login-response.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f658b6f6-23e4-4b36-9c05-4cb4040c1170.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f658b6f6-23e4-4b36-9c05-4cb4040c1170.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/viewsets.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/item/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/item/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +215,7 @@
       <workItem from="1733802854482" duration="2986000" />
       <workItem from="1733843663070" duration="206000" />
       <workItem from="1733843927408" duration="3477000" />
-      <workItem from="1734014711749" duration="1710000" />
+      <workItem from="1734014711749" duration="4281000" />
     </task>
     <task id="LOCAL-00001" summary="correção dos models">
       <option name="closed" value="true" />
