@@ -29,12 +29,12 @@ class ModelBase(models.Model):
 
 
 class Category(models.Model):
-    items = models.CharField(
+    name = models.CharField(
         db_column='tx_items',
         null=False,
     )
     def __str__(self):
-        return self.items
+        return self.name
 
 class ItemImage(ModelBase):
     image = models.ImageField(
@@ -53,6 +53,7 @@ class LostItem(ModelBase):
     #     Account,
     #     on_delete=PROTECT,
     #     db_column='user',
+    #     default='0'
     # )
     title = models.CharField(
         db_column='tx_title',
@@ -76,6 +77,12 @@ class LostItem(ModelBase):
         db_column='cs_resolved',
         default=False,
         null=False,
+    )
+    city = models.CharField(
+        db_column='tx_city',
+        null=False,
+        max_length=100,
+        default='brasil'
     )
 
     category = models.ForeignKey(
@@ -109,6 +116,12 @@ class FoundItem(ModelBase):
         db_column='cs_resolved',
         default=False,
         null=False,
+    )
+    city = models.CharField(
+        db_column='tx_city',
+        null=False,
+        max_length=100,
+        default='brasil'
     )
     category = models.ForeignKey(
         Category,

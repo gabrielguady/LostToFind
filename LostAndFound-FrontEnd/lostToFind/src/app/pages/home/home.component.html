@@ -1,18 +1,20 @@
-<div class="home-container">
-  <div *ngIf="loggedIn">
-    <header><app-nav-logged></app-nav-logged></header>
+<div class="flex flex-column w-full h-full">
+  <div class="w-full" *ngIf="loggedIn">
+    <app-nav-logged
+    (searchChanged)="onSearchValueChanged($event)"
+    ></app-nav-logged>
   </div>
-  <div *ngIf="!loggedIn">
-    <header><app-nav></app-nav></header>
+  <div class="w-full"  *ngIf="!loggedIn">
+    <div><app-nav></app-nav></div>
   </div>
-  <div class="main-content">
+  <div class="w-full">
     <app-category-sec></app-category-sec>
     <app-post-item></app-post-item>
-    <section>
+    <div class="w-full">
       <app-recent-items-lost></app-recent-items-lost>
-    </section>
-    <section>
-      <app-recent-items-found></app-recent-items-found>
-    </section>
+    </div>
+    <div class="w-full">
+      <app-recent-items-found [searchQuery]="searchQuery"></app-recent-items-found>
+    </div>
   </div>
 </div>

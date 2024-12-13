@@ -2,11 +2,10 @@ from rest_framework_simplejwt.exceptions import TokenError, InvalidToken
 from rest_framework_simplejwt.tokens import RefreshToken, AccessToken
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from django.contrib.auth import authenticate
 
-from accounts.models import Account
 from accounts.serializers import SignupSerializer, LoginSerializer, AccountSerializer, TokenSerializer
 
 

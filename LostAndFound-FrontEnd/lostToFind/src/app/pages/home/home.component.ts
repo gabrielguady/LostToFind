@@ -7,6 +7,7 @@ import {RecentItemsFoundComponent} from './recente-items-found/recent-items-foun
 import {NavLoggedComponent} from './nav/nav-logged/nav-logged.component';
 import {LoginService} from '../../../shared/services/login.service';
 import {NgIf} from '@angular/common';
+import {NavigationExtras, Router} from '@angular/router';
 
 
 @Component({
@@ -26,13 +27,20 @@ import {NgIf} from '@angular/common';
 })
 export class HomeComponent implements OnInit {
   loggedIn: boolean = false;
+  searchQuery: string = '';
 
-  constructor(private loginService: LoginService) {}
+  private router: Router = new Router();
+
+  constructor(private loginService: LoginService) {
+  }
 
   ngOnInit() {
-    // Verifica o login diretamente ao carregar o componente
     this.loggedIn = this.loginService.isLoggedIn();
   }
+  onSearchValueChanged(value: string): void {
+    this.searchQuery = value;
+  }
+
 
 }
 

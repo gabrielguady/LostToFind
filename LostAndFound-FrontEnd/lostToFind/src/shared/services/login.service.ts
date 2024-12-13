@@ -15,7 +15,7 @@ export interface User {
   providedIn: 'root'
 })
 export class LoginService {
-  private currentUserURL: string = `${URLS.BASE}/accounts/auth/current_user/`;
+  private currentUserURL: string = `${URLS.BASE}/accounts/authentication/current_user/`;
 
   constructor(private http: HttpClient) {}
 
@@ -27,7 +27,7 @@ export class LoginService {
       );
   }
   signup(username: string, email: string, cellphone: number, password: string): Observable<loginResponse> {
-    return this.http.post<loginResponse>("http://localhost:8000/accounts/auth/signup/", {username, email, cellphone, password}, { withCredentials: true }).pipe(
+    return this.http.post<loginResponse>("http://localhost:8000/accounts/authentication/signup/", {username, email, cellphone, password}, { withCredentials: true }).pipe(
       tap(( value) => {
         sessionStorage.setItem("access-token", value.access)
         sessionStorage.setItem("refresh", value.refresh)
@@ -37,7 +37,7 @@ export class LoginService {
 
   refreshToken(): Observable<loginResponse> {
     const refreshToken = localStorage.getItem('refresh_token');
-    return this.http.post<loginResponse>("http://localhost:8000/api/token/refresh", { refresh: refreshToken })
+    return this.http.post<loginResponse>("http://localhost:8000/api/token/refresh/", { refresh: refreshToken })
       .pipe(
         tap(response => this.setSession(response)),
         catchError(this.handleError)

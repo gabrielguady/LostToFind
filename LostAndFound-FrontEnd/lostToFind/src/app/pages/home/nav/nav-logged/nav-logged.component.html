@@ -14,10 +14,13 @@
       type="search"
       id="searchInput"
       class="search-input"
+      (input)="onSearchInput($event)"
       placeholder="Search..."
       aria-label="Search"
+      [value]="searchValue"
     />
     <img
+      (click)="search(searchValue)"
       loading="lazy"
       src="https://cdn.builder.io/api/v1/image/assets/TEMP/60a15ebf08ba210d4321f55a489ab0177fe3eb635f504472523cf5dc136704fa?placeholderIfAbsent=true&apiKey=ce275dddc72e48378c03f0bdece66cd6"
       class="search-icon"
