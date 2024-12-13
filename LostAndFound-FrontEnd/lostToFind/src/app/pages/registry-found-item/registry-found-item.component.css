@@ -1,34 +1,18 @@
-
-html {
-  height: 100%;
-}
-
 table {
   width: 100%;
   .mat-mdc-header-cell {
-    font-weight: bold !important;
-    background: #3d7a90 !important;
-    color: white !important;
+    font-weight: bold;
+    background: black;
+    color: white;
   }
 }
 
-.menu{
-  background-color: #3d7a90 !important;
-  color: white !important;
+.mat-mdc-form-field {
+  width: 30%;
 }
 
-.menu-btn{
-  color: white !important;
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+
 }
-
-.menu-btn-active{
-  background-color: white !important;
-  color: #3d7a90 !important;
-}
-
-.btn-default:active {
-  background-color: #3d7a90 !important;
-  color: white !important;
-}
-
-

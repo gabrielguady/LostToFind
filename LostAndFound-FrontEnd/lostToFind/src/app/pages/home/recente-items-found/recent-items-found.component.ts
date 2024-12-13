@@ -4,6 +4,7 @@ import {HttpClient, HttpParams} from '@angular/common/http';
 import {URLS} from '../../../../shared/urls';
 import {NgForOf, NgOptimizedImage} from '@angular/common';
 import {AppService} from '../../../../shared/services/app.service';
+import {NavigationExtras, Router} from '@angular/router';
 
 
 @Component({
@@ -21,7 +22,7 @@ export class RecentItemsFoundComponent implements OnInit, OnChanges {
   @Input() searchQuery: string = ''
   @Input() dateString: string = ''
 
-  // private router: Router = new Router();
+  private router: Router = new Router();
   private service: AppService<FoundItem>
   private parameters: HttpParams = new HttpParams();
 
@@ -50,6 +51,11 @@ export class RecentItemsFoundComponent implements OnInit, OnChanges {
         console.error('Error loading found items', err);
       }
     });
+  }
+
+  public goToPage(route: string): void {
+    const extras: NavigationExtras= {queryParamsHandling: "merge"}
+    this.router.navigate([route], extras).then();
   }
 
 

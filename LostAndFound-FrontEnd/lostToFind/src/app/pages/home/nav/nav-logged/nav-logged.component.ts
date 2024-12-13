@@ -2,13 +2,15 @@ import {Component, EventEmitter, forwardRef, OnInit, Output} from '@angular/core
 import {NgForOf, NgIf} from '@angular/common';
 import {LoginService} from "../../../../../shared/services/login.service";
 import {NG_VALUE_ACCESSOR} from '@angular/forms';
+import {MatIconModule} from '@angular/material/icon';
 
 @Component({
   selector: 'app-nav-logged',
   standalone: true,
   imports: [
     NgForOf,
-    NgIf
+    NgIf,
+    MatIconModule
   ],
   providers: [{
     provide: NG_VALUE_ACCESSOR,

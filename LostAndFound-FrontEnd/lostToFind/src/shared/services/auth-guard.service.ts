@@ -13,11 +13,10 @@ export class AuthGuardService implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ): Observable<boolean> | Promise<boolean> | boolean {
-    // Verifica se o usuário está autenticado com token
     if (this.loginService.getAccessToken()) {
-      return true;  // Permite o acesso à rota
+      return true;
     } else {
-      this.router.navigate(['/login']);  // Redireciona para o login
+      this.router.navigate(['/login']);
       return false;
     }
   }

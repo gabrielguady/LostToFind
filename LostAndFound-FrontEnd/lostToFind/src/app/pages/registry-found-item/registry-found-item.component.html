@@ -1,33 +1,38 @@
-<form [formGroup]="formGroup" (ngSubmit)="saveOrUpdate()">
-  <!-- Título -->
-  <div>
-    <label >Título</label>
-    <input matInput formControlName="title" placeholder="Título do item" />
-    <mat-error *ngIf="formGroup.controls['title'].hasError('required')">O título é obrigatório.</mat-error>
-  </div>
+<div class="flex flex-column gap-1">
+  <h1>
+    cadastro de item perdido
+  </h1>
 
-  <!-- Descrição -->
-  <div>
-    <label >Descrição</label>
-    <input matInput formControlName="description" placeholder="Descrição do item" />
-    <mat-error *ngIf="formGroup.controls['description'].hasError('required')">A descrição é obrigatória.</mat-error>
-  </div>
+  <form [formGroup]="formGroup">
+    <div class="flex flex-column gap-3 mb-4">
+      <mat-form-field>
+        <mat-label>título</mat-label>
+        <input matInput type="text" formControlName="title" appAutofocus required>
+        <mat-error>Campo Inválido</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>descrição</mat-label>
+        <input matInput type="text" formControlName="description" required>
+        <mat-error>Campo Inválido</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Data</mat-label>
+        <input matInput type="date" formControlName="date_found" required>
+        <mat-error>Campo Inválido</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Category</mat-label>
+        <input matInput type="number" formControlName="category" required>
+        <mat-error>Campo Inválido</mat-error>
+      </mat-form-field>
+    </div>
 
-  <!-- Categoria -->
-  <div>
-    <label >Descrição</label>
-    <input matInput formControlName="category" placeholder="Descrição do item" />
-    <mat-error *ngIf="formGroup.controls['category'].hasError('required')">A descrição é obrigatória.</mat-error>
-  </div>
+    <button mat-flat-button class="btn-default" id="save" type="submit"
+            (click)="saveOrUpdate()"
+            [disabled]="!formGroup.valid">
+      Salvar item perdido
+    </button>
 
-  <!-- Data Encontrada -->
-  <div>
-    <label >Data Encontrada</label>
-    <input matInput type="date" formControlName="date_found" />
-    <mat-error *ngIf="formGroup.controls['date_found'].hasError('required')">A data de encontro é obrigatória.</mat-error>
-  </div>
-  <!-- Botão de Enviar -->
-  <div>
-    <button mat-raised-button type="submit" [disabled]="formGroup.invalid">Salvar</button>
-  </div>
-</form>
+  </form>
+
+</div>
