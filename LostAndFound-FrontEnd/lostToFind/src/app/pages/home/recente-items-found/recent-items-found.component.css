@@ -1,0 +1,53 @@
+.lost-item-card {
+  border-radius: 10px;
+  display: flex;
+  max-width: 389px;
+  flex-direction: column;
+  overflow: hidden;
+  color: #000;
+  text-align: center;
+  font: 400 25px Ubuntu, sans-serif;
+}
+
+.item-image {
+  aspect-ratio: 1.21;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.item-details {
+  background: #fff;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+}
+
+.item-name {
+  font-weight: 700;
+  margin: 0;
+}
+
+.item-category {
+  color: rgb(34, 69, 196);
+  font-size: 20px;
+  margin: 20px 0 0;
+}
+
+.item-date {
+  color: rgb(104, 104, 104);
+  font-size: 10px;
+  margin: 20px 0 0;
+  display: block;
+}
+
+.item-status {
+  border-radius: 10px;
+  background-color: #C0FFCF;
+  width: 100%;
+  font-weight: 500;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}

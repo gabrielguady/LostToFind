@@ -4,12 +4,12 @@
     <div class="categories-grid">
       <div
         *ngFor="let category of categories"
-        [attr.aria-label]="category.items"
+        [attr.aria-label]="category.name"
         class="category-item"
         tabindex="0"
         role="button"
       >
-        <h3 class="category-name">{{category.items}}</h3>
+        <h3 class="category-name">{{category.name}}</h3>
       </div>
     </div>
   </div>

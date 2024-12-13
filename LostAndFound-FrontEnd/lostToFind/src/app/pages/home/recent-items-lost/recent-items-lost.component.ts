@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, input, OnInit} from '@angular/core';
 import {LostItem} from '../../../../shared/models/lost-item';
 import {HttpClient} from '@angular/common/http';
 import {URLS} from '../../../../shared/urls';
@@ -18,6 +18,7 @@ import {Router} from '@angular/router';
 })
 export class RecentItemsLostComponent implements OnInit {
   public recentItems: LostItem[]=[];
+  @Input() dateString: string = ''
 
   private router: Router = new Router();
   private service: AppService<LostItem>

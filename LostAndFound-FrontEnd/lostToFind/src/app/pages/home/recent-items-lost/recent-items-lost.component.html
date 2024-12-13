@@ -1,26 +1,5 @@
 <section class="recents-section">
-  <div class="tutorial-card" tabindex="0" role="button">
-    <img
-      src="https://cdn.builder.io/api/v1/image/assets/TEMP/6f2d6b111c52475a48b438ff90b2ba157b88998801c638776faca04d51957322?placeholderIfAbsent=true&apiKey=ce275dddc72e48378c03f0bdece66cd6"
-      alt="Tutorial illustration"
-      class="tutorial-image"
-      loading="lazy"
-    />
-    <div class="tutorial-content">
-      <h2 class="tutorial-title">
-        <span class="emphasis">First time here?... Feeling</span>
-        <span class="emphasis emphasis-light">Lost?</span>
-      </h2>
-      <p class="tutorial-description">
-        Click here.<br />
-        We gonna teach your first steps.
-      </p>
-    </div>
-  </div>
-
-  <h2 class="section-title">Recents</h2>
-
-  <div class="items-grid">
+  <article class="lost-item-card" role="article">
     <div
       *ngFor="let item of recentItems"
       class="item-card"
@@ -28,14 +7,16 @@
       tabindex="0"
     >
       <div class="item-details">
-        <div class="item-info">
-          <h3 class="item-name">{{item.title}}</h3>
-          <p class="item-category">{{item.category}}</p>
-          <time class="item-date">{{item.date_lost}}</time>
-        </div>
-        <div [class]="'status-badge '"> Item Lost
+        <h2 class="item-name">{{ item.title }}</h2>
+        <time class="item-date" [dateTime]="dateString">{{ item.date_lost }}</time>
+        <div
+          class="item-status"
+          role="status"
+          [attr.aria-label]="'Item status: ' + 'item found'"
+        >
+          item found
         </div>
       </div>
     </div>
-  </div>
+  </article>
 </section>

@@ -1,20 +1,22 @@
 <section class="recents-section">
-  <div class="items-grid">
+  <article class="lost-item-card" role="article">
     <div
       *ngFor="let item of items"
       class="item-card"
       [attr.aria-label]="'Item: ' + item.category"
       tabindex="0"
     >
-      <div class="item-details">
-        <div class="item-info">
-          <h3 class="item-name">{{item.title}}</h3>
-          <p class="item-category">{{item.category}}</p>
-          <time class="item-date">{{item.date_found}}</time>
-        </div>
-        <div [class]="'status-badge '"> Item Found
-        </div>
-      </div>
+  <div class="item-details">
+    <h2 class="item-name">{{ item.title }}</h2>
+    <time class="item-date" [dateTime]="dateString">{{ item.date_found }}</time>
+    <div
+      class="item-status"
+      role="status"
+      [attr.aria-label]="'Item status: ' + 'item found'"
+    >
+      item found
+    </div>
     </div>
   </div>
+  </article>
 </section>
