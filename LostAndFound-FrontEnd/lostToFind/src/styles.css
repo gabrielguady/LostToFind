@@ -1,14 +1,40 @@
+@import 'primeflex/primeflex.css';
+@import '@angular/material/prebuilt-themes/azure-blue.css';
 
-
-* {
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
   height: 100%;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html {
+  height: 100%;
+}
+
+table {
+  width: 100%;
+  .mat-mdc-header-cell {
+    font-weight: bold !important;
+    background: #3d7a90 !important;
+    color: white !important;
+  }
+}
+
+.menu {
+  background-color: #3d7a90 !important;
+  color: white !important;
+}
+
+.menu-btn {
+  color: white !important;
+}
+
+.menu-btn-active {
+  background-color: white !important;
+  color: #3d7a90 !important;
+}
+
+.btn-default:active {
+  background-color: #3d7a90 !important;
+  color: white !important;
+}

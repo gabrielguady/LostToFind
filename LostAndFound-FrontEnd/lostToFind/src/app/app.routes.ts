@@ -1,16 +1,12 @@
 import {Routes} from '@angular/router';
-import {LoginComponent} from './pages/login/login.component';
-import {SignupComponent} from './pages/signup/signup.component';
-import {HomeComponent} from './pages/home/home.component';
-import {AuthGuardService} from '../shared/services/auth-guard.service'
-import {RegistryFoundItemComponent} from './pages/registry-found-item/registry-found-item.component';
-import {RegisterLostItemComponent} from './pages/register-lost-item/register-lost-item.component';
+import {LostItemListComponent} from '../base/lost-item-list/lost-item-list.component';
+import {FoundItemListComponent} from '../base/item-found-list/found-item-list.component';
+import {LostItemCreateComponent} from '../base/lost-item-list/lost-item-create/lost-item-create.component';
+import {FoundItemCreateComponent} from '../base/item-found-list/found-item-create/found-item-create.component';
 
 export const routes: Routes = [
-  { path:'', redirectTo:'home', pathMatch:'full'},
-  { path: 'login', component: LoginComponent},
-  { path: 'signup', component: SignupComponent},
-  { path: 'home', component: HomeComponent},
-  {path:  'itemFound/:action', component: RegistryFoundItemComponent, canActivate:[AuthGuardService]},
-  {path:  'itemLost/:action', component: RegisterLostItemComponent, canActivate:[AuthGuardService]},
+  {path: 'lost_item', component: LostItemListComponent},
+  {path: 'found_item', component: FoundItemListComponent},
+  {path:'lost_item/:action', component: LostItemCreateComponent},
+  {path:'found_item/:action', component: FoundItemCreateComponent},
 ];
